@@ -1,4 +1,8 @@
 Thinkcactus::Application.routes.draw do
+  get "adminpanel/index"
+
+  get "comments/index"
+
   get "work/index"
 
   get "posts/index"

@@ -464,3 +464,1580 @@ Started GET "/" for 127.0.0.1 at Sun Nov 14 17:53:03 +0200 2010
 Rendered posts/_post.html.erb (0.0ms)
 Rendered posts/index.html.erb within layouts/application (2.2ms)
 Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:00:39 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:02:50 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("author_id", "body", "created_at", "published_on", "title", "updated_at") VALUES (NULL, 'Testing post.', '2010-11-14 16:07:37.967695', NULL, NULL, '2010-11-14 16:07:37.967695')
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:07:46 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (5.1ms)
+Rendered posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 20ms (Views: 13.0ms | ActiveRecord: 0.5ms)
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:12:25 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (3.8ms)
+Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 18ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:12:27 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.0ms)
+Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 18ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "posts" SET "title" = 'First post with the RoR framework', "updated_at" = '2010-11-14 16:12:49.114025' WHERE ("posts"."id" = 1)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:12:50 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (3.8ms)
+Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:13:28 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (3.8ms)
+Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:13:37 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (3.8ms)
+Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 18ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_name" varchar(255), "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101114164339')
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("works")[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("works")[0m
+
+
+Started GET "/comments" for 127.0.0.1 at Sun Nov 14 18:45:43 +0200 2010
+
+ActionController::RoutingError (No route matches "/comments"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/comment" for 127.0.0.1 at Sun Nov 14 18:45:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/comment"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 18:57:08 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (3.9ms)
+Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 19ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("works")[0m
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:06:54 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:18:00 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:18:01 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:19:20 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:19:20 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:19:30 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 20:20:45 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/_post.html.erb (5.4ms)
+Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 102ms (Views: 14.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/adminpanel" for 127.0.0.1 at Sun Nov 14 20:20:49 +0200 2010
+
+ActionController::RoutingError (No route matches "/adminpanel"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/adminpanel/index" for 127.0.0.1 at Sun Nov 14 21:03:16 +0200 2010
+  Processing by AdminpanelController#index as HTML
+ERROR: compiling _app_views_adminpanel_index_html_erb__1113923821_2172307080_0 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/adminpanel/index.html.erb:2: syntax error, unexpected tIVAR, expecting tASSOC
+...post_form", :collection @posts );@output_buffer.safe_concat(...
+                              ^
+Function body:           def _app_views_adminpanel_index_html_erb__1113923821_2172307080_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "adminpanel/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Administration Panel</h1>
+<p>');@output_buffer.append= ( render :partial => "post_form", :collection @posts );@output_buffer.safe_concat('</p>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/adminpanel/index.html.erb:6:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__1141741640__process_action__199225275__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered adminpanel/index.html.erb within layouts/application (3.1ms)
+Completed   in 9ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/adminpanel/index.html.erb:2: syntax error, unexpected tIVAR, expecting tASSOC
+...post_form", :collection @posts );@output_buffer.safe_concat(...
+                              ^):
+    1: <h1>Administration Panel</h1>
+    2: <p><%= render :partial => "post_form", :collection @posts %></p>
+  app/views/adminpanel/index.html.erb:6:in `compile'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.6ms)
+
+
+Started GET "/adminpanel/index" for 127.0.0.1 at Sun Nov 14 21:04:10 +0200 2010
+  Processing by AdminpanelController#index as HTML
+Rendered adminpanel/_post_form.html.erb (1.1ms)
+Rendered adminpanel/index.html.erb within layouts/application (2.9ms)
+Completed   in 8ms
+
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"posts"}):
+    1: <% form_tag(:controller => "posts", :action => "create") do %>
+    2:   <%= label_tag(:message, "What are you doing?") %><br />
+    3:   <%= text_area_tag(:message, nil, :size => "44x6") %><br />
+    4:   <%= submit_tag("Update") %>
+  app/views/adminpanel/_post_form.html.erb:1:in `_app_views_adminpanel__post_form_html_erb__1172995857_2175270720_720190'
+  app/views/adminpanel/index.html.erb:2:in `_app_views_adminpanel_index_html_erb__1113923821_2175283640_0'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("works")[0m
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:19:10 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (62.5ms)
+Rendered posts/index.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 136ms (Views: 71.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Nov 14 21:19:33 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Sun Nov 14 21:19:36 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/new"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/post/new" for 127.0.0.1 at Sun Nov 14 21:19:40 +0200 2010
+
+ActionController::RoutingError (No route matches "/post/new"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:19:43 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (3.9ms)
+Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 20ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:19:50 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (4.4ms)
+Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 87ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Nov 14 21:20:05 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("works")[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (2.1ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_name" varchar(255), "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.5ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "author_id" integer, "published_on" date, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (2.0ms)[0m  CREATE TABLE "works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (2.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35mSQL (1.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20101114164339')[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20101114134523')
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20101114134559')[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20101114153828')
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:20:38 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (3.9ms)
+Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:21:14 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (3.9ms)
+Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Sun Nov 14 21:46:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/1"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:46:51 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (5.4ms)
+Rendered posts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 113ms (Views: 13.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Nov 14 21:46:59 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:49:40 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (16.9ms)
+Rendered posts/index.html.erb within layouts/application (18.7ms)
+Completed   in 33ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103119c08>:0x1031152c0>):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<a class="wholelink" href="<%= link_to "Whole post", posts_path %>">Full post</a>
+    8: </div>
+  app/views/posts/_post.html.erb:7:in `_app_views_posts__post_html_erb___216885543_2173199900_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2173211540_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (65.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (71.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:50:14 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (14.7ms)
+Rendered posts/index.html.erb within layouts/application (16.4ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined local variable or method `post_path' for #<#<Class:0x1033cf8f8>:0x1033cdbe8>):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<a class="wholelink" href="<%= link_to "Whole post", post_path %>">Full post</a>
+    8: </div>
+  app/views/posts/_post.html.erb:7:in `_app_views_posts__post_html_erb___216885543_2174588900_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2174640500_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:50:23 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.7ms)
+Rendered posts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 81ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:51:09 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (4.3ms)
+Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at Sun Nov 14 21:51:13 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.9ms)
+Rendered posts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/img/logo.png" for 127.0.0.1 at Sun Nov 14 21:51:14 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/thought_bubble.png" for 127.0.0.1 at Sun Nov 14 21:51:14 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/thought_bubble.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/twitter.png" for 127.0.0.1 at Sun Nov 14 21:51:14 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/twitter.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/linkedin.png" for 127.0.0.1 at Sun Nov 14 21:51:14 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/linkedin.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/delicious.png" for 127.0.0.1 at Sun Nov 14 21:51:14 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/delicious.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/google.png" for 127.0.0.1 at Sun Nov 14 21:51:14 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/google.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/main_bottom.jpg" for 127.0.0.1 at Sun Nov 14 21:51:14 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/main_bottom.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:53:00 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+ERROR: compiling _app_views_posts__post_html_erb___216885543_2175208460_4447148 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post.html.erb:7: syntax error, unexpected '(', expecting ')'
+...k_to "Full post", @posts_path(@post) );@output_buffer.safe_c...
+                              ^
+Function body:           def _app_views_posts__post_html_erb___216885543_2175208460_4447148(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/_post";_old_output_buffer = @output_buffer;post_counter = local_assigns[:post_counter];post = local_assigns[:post];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="post">
+	<p class="korny-type">');@output_buffer.append= ( post.title );@output_buffer.safe_concat('</p>
+	<img class="bubble" src="img/thought_bubble.png" alt="" />
+	<p class="date-type">');@output_buffer.append= ( post.published_on );@output_buffer.safe_concat('</p>
+	<p class="normal-type embed">');@output_buffer.append= ( post.body );@output_buffer.safe_concat('</p>
+	
+	');@output_buffer.append= ( link_to "Full post", @posts_path(@post) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post.html.erb:11:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:261:in `collection_with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:258:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:258:in `collection_with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:241:in `render_collection'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:218:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:216:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:334:in `_render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:22:in `render'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2175242520_0'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:135:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__199225275__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/_post.html.erb (0.7ms)
+Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed   in 16ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post.html.erb:7: syntax error, unexpected '(', expecting ')'
+...k_to "Full post", @posts_path(@post) );@output_buffer.safe_c...
+                              ^):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @posts_path(@post) %>
+    8: </div>
+  app/views/posts/_post.html.erb:11:in `compile'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2175242520_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:53:12 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+ERROR: compiling _app_views_posts__post_html_erb___216885543_2172995300_4447148 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post.html.erb:7: syntax error, unexpected '(', expecting ')'
+...k_to "Full post", @posts_path(post) );@output_buffer.safe_co...
+                              ^
+Function body:           def _app_views_posts__post_html_erb___216885543_2172995300_4447148(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/_post";_old_output_buffer = @output_buffer;post_counter = local_assigns[:post_counter];post = local_assigns[:post];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="post">
+	<p class="korny-type">');@output_buffer.append= ( post.title );@output_buffer.safe_concat('</p>
+	<img class="bubble" src="img/thought_bubble.png" alt="" />
+	<p class="date-type">');@output_buffer.append= ( post.published_on );@output_buffer.safe_concat('</p>
+	<p class="normal-type embed">');@output_buffer.append= ( post.body );@output_buffer.safe_concat('</p>
+	
+	');@output_buffer.append= ( link_to "Full post", @posts_path(post) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post.html.erb:11:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:261:in `collection_with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:258:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:258:in `collection_with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:241:in `render_collection'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:218:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:216:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:334:in `_render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:22:in `render'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2173037920_0'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:135:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__199225275__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/_post.html.erb (0.6ms)
+Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed   in 15ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post.html.erb:7: syntax error, unexpected '(', expecting ')'
+...k_to "Full post", @posts_path(post) );@output_buffer.safe_co...
+                              ^):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @posts_path(post) %>
+    8: </div>
+  app/views/posts/_post.html.erb:11:in `compile'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2173037920_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:53:31 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (14.9ms)
+Rendered posts/index.html.erb within layouts/application (16.5ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x1034c52f8>:0x1034b29a0>):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", posts_path(@post) %>
+    8: </div>
+  app/views/posts/_post.html.erb:7:in `_app_views_posts__post_html_erb___216885543_2175017400_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2175094640_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:53:51 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.5ms)
+Rendered posts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at Sun Nov 14 21:53:59 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (4.3ms)
+Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/img/logo.png" for 127.0.0.1 at Sun Nov 14 21:53:59 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/thought_bubble.png" for 127.0.0.1 at Sun Nov 14 21:53:59 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/thought_bubble.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/twitter.png" for 127.0.0.1 at Sun Nov 14 21:53:59 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/twitter.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/posts/img/linkedin.png" for 127.0.0.1 at Sun Nov 14 21:53:59 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/linkedin.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/delicious.png" for 127.0.0.1 at Sun Nov 14 21:54:00 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/delicious.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/google.png" for 127.0.0.1 at Sun Nov 14 21:54:00 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/google.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/main_bottom.jpg" for 127.0.0.1 at Sun Nov 14 21:54:00 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/main_bottom.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at Sun Nov 14 21:54:03 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (14.5ms)
+Rendered posts/index.html.erb within layouts/application (16.1ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `post_path' for #<#<Class:0x1032cb060>:0x1032c6a10>):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @posts %>
+    8: </div>
+  app/views/posts/_post.html.erb:7:in `_app_views_posts__post_html_erb___216885543_2174079700_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2174094660_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (4.8ms)
+Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 81ms (Views: 72.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/img/logo.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/thought_bubble.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/thought_bubble.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/twitter.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/twitter.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/linkedin.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/linkedin.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/delicious.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/delicious.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/google.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/google.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/main_bottom.jpg" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/main_bottom.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/logo.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/delicious.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/delicious.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/linkedin.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/linkedin.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/thought_bubble.png" for 127.0.0.1 at Sun Nov 14 21:54:08 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/thought_bubble.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/twitter.png" for 127.0.0.1 at Sun Nov 14 21:54:09 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/twitter.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:54:11 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.6ms)
+Rendered posts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:54:16 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (14.6ms)
+Rendered posts/index.html.erb within layouts/application (16.2ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `post_path' for #<#<Class:0x1031c2b78>:0x1031c0aa8>):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @posts %>
+    8: </div>
+  app/views/posts/_post.html.erb:7:in `_app_views_posts__post_html_erb___216885543_2173551500_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2173565160_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:54:23 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.4ms)
+Rendered posts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 22ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:56:59 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (64.1ms)
+Rendered posts/index.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 79ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:57:52 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.6ms)
+Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (4.3ms)
+Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 20ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/img/logo.png" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/thought_bubble.png" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/thought_bubble.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/twitter.png" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/twitter.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/linkedin.png" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/linkedin.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/delicious.png" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/delicious.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/posts/img/google.png" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/google.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/main_bottom.jpg" for 127.0.0.1 at Sun Nov 14 21:58:47 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/main_bottom.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 21:58:50 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.5ms)
+Rendered posts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:00:17 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (14.3ms)
+Rendered posts/index.html.erb within layouts/application (15.9ms)
+Completed   in 29ms
+
+ActionView::Template::Error (undefined method `post_path' for #<#<Class:0x1031fcfd0>:0x1031f9c90>):
+    4: 	<p class="date-type"><%= post.published_on %></p>
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", post, :class => "wholelink" %>
+    8: </div>
+  app/views/posts/_post.html.erb:7:in `_app_views_posts__post_html_erb___216885543_2173644740_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2173681800_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:00:21 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (4.3ms)
+Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:02:46 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (76.1ms)
+Rendered posts/index.html.erb within layouts/application (77.7ms)
+Completed   in 91ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x1030ddac8>:0x1030db2f0>):
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @post, :class => "wholelink" %>
+    8: 	<% if current_user == post.user %>
+    9: 		<% link_to "edit" %>
+    10: 		<% link_to "new" %>
+    11: 	<% end %>
+  app/views/posts/_post.html.erb:8:in `_app_views_posts__post_html_erb___216885543_2173077340_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2173091180_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:03:15 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (14.2ms)
+Rendered posts/index.html.erb within layouts/application (15.7ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x1031cc718>:0x1031c9d10>):
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @post, :class => "wholelink" %>
+    8: 	<% if user == post.user %>
+    9: 		<% link_to "edit" %>
+    10: 		<% link_to "new" %>
+    11: 	<% end %>
+  app/views/posts/_post.html.erb:8:in `_app_views_posts__post_html_erb___216885543_2173568000_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2173581120_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:03:19 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (10.0ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `user' for #<Post:0x103483d80>):
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @post, :class => "wholelink" %>
+    8: 	<% if User == post.user %>
+    9: 		<% link_to "edit" %>
+    10: 		<% link_to "new" %>
+    11: 	<% end %>
+  app/views/posts/_post.html.erb:8:in `_app_views_posts__post_html_erb___216885543_2174878360_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2174950180_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:03:35 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 24ms (Views: 15.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:03:44 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (14.5ms)
+Rendered posts/index.html.erb within layouts/application (16.1ms)
+Completed   in 29ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x1033166c8>:0x1033149e0>):
+    5: 	<p class="normal-type embed"><%= post.body %></p>
+    6: 	
+    7: 	<%= link_to "Full post", @post, :class => "wholelink" %>
+    8: 	<% if current_user == post.author %>
+    9: 		<% link_to "edit" %>
+    10: 		<% link_to "new" %>
+    11: 	<% end %>
+  app/views/posts/_post.html.erb:8:in `_app_views_posts__post_html_erb___216885543_2174248300_4447148'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2174261340_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:03:47 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 25ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:05:17 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (60.7ms)
+Rendered posts/index.html.erb within layouts/application (63.6ms)
+Completed 200 OK in 141ms (Views: 69.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 22:05:53 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 25ms (Views: 16.3ms | ActiveRecord: 0.5ms)
