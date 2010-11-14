@@ -4,9 +4,10 @@
 	<p class="date-type"><%= post.created_at.strftime(" %b %d %Y") %></p>
 	<p class="normal-type embed"><%= post.body %></p>
 	
-	<%= link_to "Full post", @post, :class => "wholelink" %>
+	<%= link_to "Full post", post, :class => "wholelink" %>
 	<% if User == post.author %>
 		<% link_to "edit" %>
 		<% link_to "new" %>
+		<% link_to "destroy", post, :confirm => "Are you sure you want to destroy this post?", :method => :delete %>
 	<% end %>
 </div>

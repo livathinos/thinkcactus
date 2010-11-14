@@ -280,6 +280,9 @@ html {}
 	top: 25px;
 }
 
+#comments { float: left; width: 500px; }
+
+#new_comment { float: left; }
 /*-------------------------
  *	[CONTENT] WORK
 -------------------------*/

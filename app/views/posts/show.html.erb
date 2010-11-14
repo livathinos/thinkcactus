@@ -1,0 +1,33 @@
+<div id="upper-container">
+	
+	<div class="post">
+		<p class="korny-type"><%= @post.title %></p>
+		<img class="bubble" src="/img/thought_bubble.png" alt="" />
+		<p class="date-type"><%= @post.created_at.strftime(" %b %d %Y") %></p>
+		<p class="normal-type embed"><%= @post.body %></p>
+
+		<% if User == @post.author %>
+			<% link_to "edit" %>
+			<% link_to "new" %>
+			<% link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete %>
+		<% end %>
+	</div>
+	
+	<div id="comments">
+		
+		<h2 class="korny-type">Comments</h2>
+		
+		<ul>
+			<%= render :partial => @post.comments %>
+		</ul>
+	
+	</div>
+	
+	<% form_for [@post, Comment.new] do |f| %>
+		<p>
+			<%= f.label :body, "New Comment" %><br />
+			<%= f.text_area :body %>
+		</p>
+		<p><%= f.submit "Add comment" %></p>
+	<% end %>
+</div>
