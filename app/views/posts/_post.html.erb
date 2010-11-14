@@ -1,5 +1,8 @@
-<h2><%= post.title %></h2>
-<div><span>by <%= post.author.name %></span></div>
-<p class="post_body">
-		<%= post.body %>
-</p>
+<div class="post">
+	<p class="korny-type"><%= post.title %></p>
+	<img class="bubble" src="img/thought_bubble.png" alt="" />
+	<p class="date-type"><%= post.published_on %></p>
+	<p class="normal-type embed"><%= post.body %></p>
+	
+	<a class="wholelink" href="#">Full post</a>
+</div>

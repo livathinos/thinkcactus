@@ -68,3 +68,399 @@ Started GET "/" for 127.0.0.1 at Sun Nov 14 16:42:26 +0200 2010
 Rendered posts/_post.html.erb (0.0ms)
 Rendered posts/index.html.erb within layouts/application (3.1ms)
 Completed 200 OK in 123ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:20:40 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 133ms (Views: 44.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Sun Nov 14 17:20:41 +0200 2010
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:23:26 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 102ms (Views: 7.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at Sun Nov 14 17:23:37 +0200 2010
+
+ActionController::RoutingError (No route matches "/index.html"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:28:13 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/img/logo.png" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/logo.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/img/twitter.png" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/twitter.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/thought_bubble.png" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/thought_bubble.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/delicious.png" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/delicious.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/google.png" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/google.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/img/linkedin.png" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/linkedin.png"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/posts/img/main_bottom.jpg" for 127.0.0.1 at Sun Nov 14 17:28:22 +0200 2010
+
+ActionController::RoutingError (No route matches "/posts/img/main_bottom.jpg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at Sun Nov 14 17:30:00 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (33.7ms)
+Completed   in 45ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Posts):
+    23: 		<div id="header-inner">
+    24: 			<a href="#"><img id="logo" src="img/logo.png" alt="ThinkCactus - Webcorner about web development and such" /></a>
+    25: 			<ul class="nav">
+    26: 				<li><a class="link-one" href="<%= link_to Posts, @posts %>">home</a></li>
+    27: 				<li><a class="link-two" href="work.html">work</a></li>
+    28: 				<li><a class="link-three" href="#">contact</a></li>
+    29: 			</ul>
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__1870633928_2175911840_0'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:32:13 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:32:19 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:32:21 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:32:30 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at Sun Nov 14 17:32:33 +0200 2010
+
+ActionController::RoutingError (No route matches "/index.html"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:32:55 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:32:58 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:33:03 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:36:29 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (8.1ms)[0m  [1mCREATE TABLE "works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101114153828')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("posts")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("works")
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("posts")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("works")
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("posts")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("works")
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:51:41 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:51:45 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:51:45 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:51:57 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:52:00 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 14 17:53:03 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.4ms)

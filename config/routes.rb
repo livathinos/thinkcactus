@@ -1,4 +1,6 @@
 Thinkcactus::Application.routes.draw do
+  get "work/index"
+
   get "posts/index"
 
   # The priority is based upon order of creation:
