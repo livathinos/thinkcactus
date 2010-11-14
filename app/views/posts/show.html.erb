@@ -11,23 +11,24 @@
 			<% link_to "new" %>
 			<% link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete %>
 		<% end %>
-	</div>
+	</div><!--end of .post-->
 	
 	<div id="comments">
 		
 		<h2 class="korny-type">Comments</h2>
 		
 		<ul>
-			<%= render :partial => @post.comments %>
+			<%= render :partial => "comments/comment",
+					   :collection => @post.comments %>
+			
 		</ul>
 	
-	</div>
+		<%= link_to 'Back to posts', posts_path %>
+		
+		<p>Add a comment:</p>
+
+		<%= render "comments/form" %>
+		
+	</div><!--end of #comments-->
 	
-	<% form_for [@post, Comment.new] do |f| %>
-		<p>
-			<%= f.label :body, "New Comment" %><br />
-			<%= f.text_area :body %>
-		</p>
-		<p><%= f.submit "Add comment" %></p>
-	<% end %>
-</div>
+</div><!--end of #upper-container-->

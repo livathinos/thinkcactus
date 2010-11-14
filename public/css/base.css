@@ -282,6 +282,8 @@ html {}
 
 #comments { float: left; width: 500px; }
 
+#comments li { display: block; }
+
 #new_comment { float: left; }
 /*-------------------------
  *	[CONTENT] WORK

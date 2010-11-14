@@ -5215,3 +5215,1564 @@ Rendered collection (0.0ms)
 DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___840091749_2174104640_0 at /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:26)
 Rendered posts/show.html.erb within layouts/application (24.2ms)
 Completed 200 OK in 39ms (Views: 28.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 15 00:07:32 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (10.1ms)
+Rendered posts/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 27ms (Views: 17.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:07:35 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered collection (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___840091749_2172818420_0 at /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:26)
+Rendered posts/show.html.erb within layouts/application (87.2ms)
+Completed 200 OK in 102ms (Views: 91.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:14:05 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered collection (0.0ms)
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from _app_views_posts_show_html_erb___840091749_2174093140_0 at /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:30)
+Rendered posts/show.html.erb within layouts/application (26.2ms)
+Completed   in 40ms
+
+ActionView::Template::Error (Model Comment does not respond to commenter):
+    31: 		
+    32: 		<div class="field">
+    33: 			<%= f.label :commenter %><br />
+    34: 			<%= f.text_field :commenter %>
+    35: 		</div><!--end of .field-->
+    36: 		
+    37: 		<div class="field">
+  app/views/posts/show.html.erb:34:in `_app_views_posts_show_html_erb___840091749_2174093140_0'
+  app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___840091749_2174093140_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:15:22 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered collection (0.0ms)
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from _app_views_posts_show_html_erb___840091749_2174841020_0 at /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:30)
+Rendered posts/show.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 43ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:15:50 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered collection (0.0ms)
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from _app_views_posts_show_html_erb___840091749_2175149680_0 at /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:30)
+Rendered posts/show.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 41ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:16:43 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered collection (0.0ms)
+Rendered posts/show.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 43ms (Views: 32.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:16:51 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+ERROR: compiling _app_views_posts_show_html_erb___840091749_2175775120_0 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:32: syntax error, unexpected '<', expecting ')'
+		<div class="field">
+		 ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:33: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...tput_buffer.safe_concat('<br />
+                              ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: unknown regexp options - dv
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: unmatched ): />
+			');@output_buffer.append= ( f.text_area :body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: syntax error, unexpected '<'
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		       ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: syntax error, unexpected kEND
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		             ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: syntax error, unexpected '>'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:38: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...tput_buffer.safe_concat('<br />
+                              ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: unknown regexp options - dv
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: unmatched ): />
+			');@output_buffer.append= ( f.text_field :author_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: syntax error, unexpected '<'
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		       ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: syntax error, unexpected kEND
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		             ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: syntax error, unexpected '>'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: unknown regexp options - dv
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: unmatched ): /div>
+');	 end 
+@output_buffer.safe_concat('	
+</
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: syntax error, unexpected '<'
+</div><!--end of #upper-container-->');@output_buffer.to_s
+       ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: syntax error, unexpected kEND
+</div><!--end of #upper-container-->');@output_buffer.to_s
+             ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_posts_show_html_erb___840091749_2175775120_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="upper-container">
+	
+	<div class="post">
+		<p class="korny-type">');@output_buffer.append= ( @post.title );@output_buffer.safe_concat('</p>
+		<img class="bubble" src="/img/thought_bubble.png" alt="" />
+		<p class="date-type">');@output_buffer.append= ( @post.created_at.strftime(" %b %d %Y") );@output_buffer.safe_concat('</p>
+		<p class="normal-type embed">');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('</p>
+
+');		 if User == @post.author 
+			 link_to "edit" 
+			 link_to "new" 
+			 link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete 
+		 end 
+@output_buffer.safe_concat('	</div><!--end of .post-->
+	
+	<div id="comments">
+		
+		<h2 class="korny-type">Comments</h2>
+		
+		<ul>
+			');@output_buffer.append= ( render :partial => @post.comments );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</ul>
+	
+	</div><!--end of #comments-->
+	
+	');@output_buffer.append= ( link_to 'Back to posts', posts_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<p>Add a comment:</p>
+	
+	');@output_buffer.append=  form_for([@post, @post.comments.build]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('		');@output_buffer.append= ( #f.error_messages );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		
+		<div class="field">
+			');@output_buffer.append= ( f.label :body );@output_buffer.safe_concat('<br />
+			');@output_buffer.append= ( f.text_area :body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+
+		<div class="field">
+			');@output_buffer.append= ( f.label :author_name );@output_buffer.safe_concat('<br />
+			');@output_buffer.append= ( f.text_field :author_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+		
+		<div class="actions">
+			');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</div>
+');	 end 
+@output_buffer.safe_concat('	
+</div><!--end of #upper-container-->');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:18:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__453433196__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:138:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed   in 78ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:32: syntax error, unexpected '<', expecting ')'
+		<div class="field">
+		 ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:33: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...tput_buffer.safe_concat('<br />
+                              ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: unknown regexp options - dv
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: unmatched ): />
+			');@output_buffer.append= ( f.text_area :body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: syntax error, unexpected '<'
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		       ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: syntax error, unexpected kEND
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		             ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:35: syntax error, unexpected '>'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:38: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...tput_buffer.safe_concat('<br />
+                              ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: unknown regexp options - dv
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: unmatched ): />
+			');@output_buffer.append= ( f.text_field :author_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: syntax error, unexpected '<'
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		       ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: syntax error, unexpected kEND
+');@output_buffer.safe_concat('		</div><!--end of .field-->
+                               		             ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:40: syntax error, unexpected '>'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: unknown regexp options - dv
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: unmatched ): /div>
+');	 end 
+@output_buffer.safe_concat('	
+</
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: syntax error, unexpected '<'
+</div><!--end of #upper-container-->');@output_buffer.to_s
+       ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:47: syntax error, unexpected kEND
+</div><!--end of #upper-container-->');@output_buffer.to_s
+             ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected kEND, expecting ')'):
+    29: 	<%= form_for([@post, @post.comments.build]) do |f| %>
+    30: 		<%= #f.error_messages %>
+    31: 		
+    32: 		<div class="field">
+    33: 			<%= f.label :body %><br />
+    34: 			<%= f.text_area :body %>
+    35: 		</div><!--end of .field-->
+  app/views/posts/show.html.erb:50:in `compile'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:16:59 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered collection (0.0ms)
+Rendered posts/show.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 41ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:17:24 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered collection (0.0ms)
+Rendered posts/show.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 41ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Mon Nov 15 00:17:44 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (9.9ms)
+Rendered posts/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 27ms (Views: 17.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 15 00:17:50 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (11.0ms)
+Rendered posts/index.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 92ms (Views: 83.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:17:52 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered collection (0.0ms)
+Rendered posts/show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 40ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:21:51 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+ERROR: compiling _app_views_posts_show_html_erb___840091749_2175098740_0 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_posts_show_html_erb___840091749_2175098740_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="upper-container">
+	
+	<div class="post">
+		<p class="korny-type">');@output_buffer.append= ( @post.title );@output_buffer.safe_concat('</p>
+		<img class="bubble" src="/img/thought_bubble.png" alt="" />
+		<p class="date-type">');@output_buffer.append= ( @post.created_at.strftime(" %b %d %Y") );@output_buffer.safe_concat('</p>
+		<p class="normal-type embed">');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('</p>
+
+');		 if User == @post.author 
+			 link_to "edit" 
+			 link_to "new" 
+			 link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete 
+		 end 
+@output_buffer.safe_concat('	</div><!--end of .post-->
+	
+	<div id="comments">
+		
+		<h2 class="korny-type">Comments</h2>
+		
+		<ul>
+');@output_buffer.append_if_string= 			 @post.comments.each do |comment| 
+@output_buffer.safe_concat('			');@output_buffer.append= ( render :partial => comment );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</ul>
+	
+		');@output_buffer.append= ( link_to 'Back to posts', posts_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		<p>Add a comment:</p>
+
+		');@output_buffer.append=  form_for([@post, @post.comments.build]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+			<div class="field">
+				');@output_buffer.append= ( f.label :body );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_area :body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="field">
+				');@output_buffer.append= ( f.label :author_name );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_field :author_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="actions">
+				');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+');		 end 
+@output_buffer.safe_concat('		
+	</div><!--end of #comments-->
+	
+</div><!--end of #upper-container-->');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:18:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__453433196__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:138:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed   in 83ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting kEND):
+    45: 	</div><!--end of #comments-->
+    46: 	
+    47: </div><!--end of #upper-container-->
+  app/views/posts/show.html.erb:50:in `compile'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:22:23 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+ERROR: compiling _app_views_posts_show_html_erb___840091749_2173278880_0 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_posts_show_html_erb___840091749_2173278880_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="upper-container">
+	
+	<div class="post">
+		<p class="korny-type">');@output_buffer.append= ( @post.title );@output_buffer.safe_concat('</p>
+		<img class="bubble" src="/img/thought_bubble.png" alt="" />
+		<p class="date-type">');@output_buffer.append= ( @post.created_at.strftime(" %b %d %Y") );@output_buffer.safe_concat('</p>
+		<p class="normal-type embed">');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('</p>
+
+');		 if User == @post.author 
+			 link_to "edit" 
+			 link_to "new" 
+			 link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete 
+		 end 
+@output_buffer.safe_concat('	</div><!--end of .post-->
+	
+	<div id="comments">
+		
+		<h2 class="korny-type">Comments</h2>
+		
+		<ul>
+');			 @post.comments.each do |comment|
+			render :partial => comment 
+@output_buffer.safe_concat('		</ul>
+	
+		');@output_buffer.append= ( link_to 'Back to posts', posts_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		<p>Add a comment:</p>
+
+		');@output_buffer.append=  form_for([@post, @post.comments.build]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+			<div class="field">
+				');@output_buffer.append= ( f.label :body );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_area :body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="field">
+				');@output_buffer.append= ( f.label :author_name );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_field :author_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="actions">
+				');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+');		 end 
+@output_buffer.safe_concat('		
+	</div><!--end of #comments-->
+	
+</div><!--end of #upper-container-->');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:18:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__453433196__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:138:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed   in 16ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting kEND):
+    45: 	</div><!--end of #comments-->
+    46: 	
+    47: </div><!--end of #upper-container-->
+  app/views/posts/show.html.erb:50:in `compile'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:22:29 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+ERROR: compiling _app_views_posts_show_html_erb___840091749_2176188660_0 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:22: syntax error, unexpected ')', expecting kEND
+			render :partial => comment );@output_buffer.safe_concat('
+			                            ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_posts_show_html_erb___840091749_2176188660_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="upper-container">
+	
+	<div class="post">
+		<p class="korny-type">');@output_buffer.append= ( @post.title );@output_buffer.safe_concat('</p>
+		<img class="bubble" src="/img/thought_bubble.png" alt="" />
+		<p class="date-type">');@output_buffer.append= ( @post.created_at.strftime(" %b %d %Y") );@output_buffer.safe_concat('</p>
+		<p class="normal-type embed">');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('</p>
+
+');		 if User == @post.author 
+			 link_to "edit" 
+			 link_to "new" 
+			 link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete 
+		 end 
+@output_buffer.safe_concat('	</div><!--end of .post-->
+	
+	<div id="comments">
+		
+		<h2 class="korny-type">Comments</h2>
+		
+		<ul>
+			');@output_buffer.append= ( @post.comments.each do |comment|
+			render :partial => comment );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</ul>
+	
+		');@output_buffer.append= ( link_to 'Back to posts', posts_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		<p>Add a comment:</p>
+
+		');@output_buffer.append=  form_for([@post, @post.comments.build]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+			<div class="field">
+				');@output_buffer.append= ( f.label :body );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_area :body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="field">
+				');@output_buffer.append= ( f.label :author_name );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_field :author_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="actions">
+				');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+');		 end 
+@output_buffer.safe_concat('		
+	</div><!--end of #comments-->
+	
+</div><!--end of #upper-container-->');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:18:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__453433196__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:138:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed   in 80ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:22: syntax error, unexpected ')', expecting kEND
+			render :partial => comment );@output_buffer.safe_concat('
+			                            ^
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting ')'):
+    19: 		
+    20: 		<ul>
+    21: 			<%= @post.comments.each do |comment|
+    22: 			render :partial => comment %>
+    23: 		</ul>
+    24: 	
+    25: 		<%= link_to 'Back to posts', posts_path %>
+  app/views/posts/show.html.erb:50:in `compile'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:22:47 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+ERROR: compiling _app_views_posts_show_html_erb___840091749_2173336600_0 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_posts_show_html_erb___840091749_2173336600_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/show";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="upper-container">
+	
+	<div class="post">
+		<p class="korny-type">');@output_buffer.append= ( @post.title );@output_buffer.safe_concat('</p>
+		<img class="bubble" src="/img/thought_bubble.png" alt="" />
+		<p class="date-type">');@output_buffer.append= ( @post.created_at.strftime(" %b %d %Y") );@output_buffer.safe_concat('</p>
+		<p class="normal-type embed">');@output_buffer.append= ( @post.body );@output_buffer.safe_concat('</p>
+
+');		 if User == @post.author 
+			 link_to "edit" 
+			 link_to "new" 
+			 link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete 
+		 end 
+@output_buffer.safe_concat('	</div><!--end of .post-->
+	
+	<div id="comments">
+		
+		<h2 class="korny-type">Comments</h2>
+		
+		<ul>
+			');@output_buffer.append=  @post.comments.each do |comment| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('			');@output_buffer.append= ( render :partial => comment );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</ul>
+	
+		');@output_buffer.append= ( link_to 'Back to posts', posts_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		<p>Add a comment:</p>
+
+		');@output_buffer.append=  form_for([@post, @post.comments.build]) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+			<div class="field">
+				');@output_buffer.append= ( f.label :body );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_area :body );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="field">
+				');@output_buffer.append= ( f.label :author_name );@output_buffer.safe_concat('<br />
+				');@output_buffer.append= ( f.text_field :author_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div><!--end of .field-->
+
+			<div class="actions">
+				');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+');		 end 
+@output_buffer.safe_concat('		
+	</div><!--end of #comments-->
+	
+</div><!--end of #upper-container-->');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:18:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__453433196__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:138:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed   in 15ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:48: syntax error, unexpected kENSURE, expecting kEND
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/show.html.erb:50: syntax error, unexpected $end, expecting kEND):
+    45: 	</div><!--end of #comments-->
+    46: 	
+    47: </div><!--end of #upper-container-->
+  app/views/posts/show.html.erb:50:in `compile'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:23:36 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered posts/show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 104ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at Mon Nov 15 00:23:49 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"Spyros", "body"=>"New comment."}, "commit"=>"Create Comment", "authenticity_token"=>"Z/1l0ghSxbcuG8oQm2MCKYVwuWiNBIW2VgsyPO7nDQU=", "utf8"=>"✓", "post_id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("author_name", "body", "created_at", "post_id", "title", "updated_at") VALUES ('Spyros', 'New comment.', '2010-11-14 22:23:49.638626', 1, NULL, '2010-11-14 22:23:49.638626')[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed 302 Found in 97ms
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:23:49 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (0.6ms)
+Rendered posts/show.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 44ms (Views: 33.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:24:20 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (0.6ms)
+Rendered posts/show.html.erb within layouts/application (24.2ms)
+Completed   in 106ms
+
+ActionView::Template::Error (undefined method `created_at' for nil:NilClass):
+    1: <li>
+    2: 	<p class="date-type">Posted <%= @comment.created_at.strftime("%b %d %Y") %></p>
+    3: 	<p class="date-type"><%= @comment.author_name %></p>
+    4: 	<p class="normal-type embed"><%= @comment.body %></p>
+    5: </li>
+  app/views/comments/_comment.html.erb:2:in `_app_views_comments__comment_html_erb___275456772_2174851660_535870'
+  app/views/posts/show.html.erb:22:in `_app_views_posts_show_html_erb___840091749_2174263500_0'
+  app/views/posts/show.html.erb:21:in `_app_views_posts_show_html_erb___840091749_2174263500_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:25:05 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (0.5ms)
+Rendered posts/show.html.erb within layouts/application (89.6ms)
+Completed 200 OK in 104ms (Views: 93.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at Mon Nov 15 00:25:21 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"Spyros Livathinos", "body"=>"Newest comment on the block."}, "commit"=>"Create Comment", "authenticity_token"=>"Z/1l0ghSxbcuG8oQm2MCKYVwuWiNBIW2VgsyPO7nDQU=", "utf8"=>"✓", "post_id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("author_name", "body", "created_at", "post_id", "title", "updated_at") VALUES ('Spyros Livathinos', 'Newest comment on the block.', '2010-11-14 22:25:21.346200', 1, NULL, '2010-11-14 22:25:21.346200')[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed 302 Found in 32ms
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:25:21 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (0.5ms)
+Rendered comments/_comment.html.erb (0.5ms)
+Rendered posts/show.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 113ms (Views: 35.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:25:50 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (0.6ms)
+Rendered comments/_comment.html.erb (0.4ms)
+Rendered posts/show.html.erb within layouts/application (97.2ms)
+Completed 200 OK in 111ms (Views: 101.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:26:31 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (0.5ms)
+Rendered comments/_comment.html.erb (0.5ms)
+Rendered posts/show.html.erb within layouts/application (94.4ms)
+Completed 200 OK in 109ms (Views: 98.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:27:44 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (0.5ms)
+Rendered comments/_comment.html.erb (0.4ms)
+Rendered posts/show.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 109ms (Views: 98.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:29:19 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered posts/show.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 42ms (Views: 31.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:35:24 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered comments/_comment.html.erb (4.7ms)
+Rendered posts/show.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 44ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:36:52 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (6.0ms)
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed   in 47ms
+
+ActionView::Template::Error (Missing partial comments/form  with {:handlers=>[:rjs, :rhtml, :builder, :erb, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/spyroslivathinos/web_dev/thinkcactus/app/views"):
+    27: 		
+    28: 		<p>Add a comment:</p>
+    29: 
+    30: 		<%= render "comments/form "%>
+    31: 		
+    32: 	</div><!--end of #comments-->
+    33: 	
+  app/views/posts/show.html.erb:30:in `_app_views_posts_show_html_erb___840091749_2173909120_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (69.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (74.7ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:37:09 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered comments/_comment.html.erb (4.8ms)
+Rendered comments/_form.html.erb (4.4ms)
+Rendered posts/show.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 46ms (Views: 35.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:41:40 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Rendered comments/_comment.html.erb (9.7ms)
+Rendered comments/_form.html.erb (3.8ms)
+Rendered posts/show.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 50ms (Views: 38.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at Mon Nov 15 00:41:54 +0200 2010
+
+AbstractController::ActionNotFound (The action 'show' could not be found for CommentsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at Mon Nov 15 00:43:36 +0200 2010
+
+AbstractController::ActionNotFound (The action 'show' could not be found for CommentsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at Mon Nov 15 00:43:41 +0200 2010
+
+AbstractController::ActionNotFound (The action 'show' could not be found for CommentsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:45:25 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered comments/_comment.html.erb (15.3ms)
+Rendered posts/show.html.erb within layouts/application (98.2ms)
+Completed   in 112ms
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x102f03180>:0x102f014c0>):
+    6: 	<%= 
+    7: 	#show a link to be able to delete comments.
+    8: 	
+    9: 	link_to 'Delete comment', [posts, comment],
+    10: 	 			:confirm => 'Are you sure?',
+    11: 				:method => :delete %>
+    12: </li>
+  app/views/comments/_comment.html.erb:9:in `_app_views_comments__comment_html_erb___275456772_2176190800_5909900'
+  app/views/posts/show.html.erb:22:in `_app_views_posts_show_html_erb___840091749_2172124660_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:45:41 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (77.1ms)
+Rendered posts/show.html.erb within layouts/application (96.1ms)
+Completed   in 110ms
+
+ActionView::Template::Error (undefined method `/posts.1_comment_path' for #<#<Class:0x1030a95c0>:0x1030a4d18>):
+    6: 	<%= 
+    7: 	#show a link to be able to delete comments.
+    8: 	
+    9: 	link_to 'Delete comment', [posts_path(@post), comment],
+    10: 	 			:confirm => 'Are you sure?',
+    11: 				:method => :delete %>
+    12: </li>
+  app/views/comments/_comment.html.erb:9:in `_app_views_comments__comment_html_erb___275456772_2172583100_5909900'
+  app/views/posts/show.html.erb:22:in `_app_views_posts_show_html_erb___840091749_2172981400_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:46:01 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+Rendered comments/_comment.html.erb (15.4ms)
+Rendered posts/show.html.erb within layouts/application (34.8ms)
+Completed   in 49ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x10310ec90>:0x10310c260>):
+    6: 	<%= 
+    7: 	#show a link to be able to delete comments.
+    8: 	
+    9: 	link_to 'Delete comment', [post, comment],
+    10: 	 			:confirm => 'Are you sure?',
+    11: 				:method => :delete %>
+    12: </li>
+  app/views/comments/_comment.html.erb:9:in `_app_views_comments__comment_html_erb___275456772_2172667960_5909900'
+  app/views/posts/show.html.erb:22:in `_app_views_posts_show_html_erb___840091749_2173195140_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:46:06 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+Rendered comments/_comment.html.erb (6.8ms)
+Rendered comments/_form.html.erb (4.2ms)
+Rendered posts/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 46ms (Views: 36.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at Mon Nov 15 00:46:10 +0200 2010
+
+AbstractController::ActionNotFound (The action 'show' could not be found for CommentsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:48:15 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+Rendered comments/_comment.html.erb (10.2ms)
+Rendered comments/_form.html.erb (3.8ms)
+Rendered posts/show.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 50ms (Views: 39.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at Mon Nov 15 00:48:19 +0200 2010
+  Processing by CommentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Completed   in 13ms
+
+ActionView::MissingTemplate (Missing template comments/show with {:handlers=>[:rjs, :rhtml, :builder, :erb, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/spyroslivathinos/web_dev/thinkcactus/app/views"):
+  app/controllers/comments_controller.rb:10:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:48:39 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+Rendered comments/_comment.html.erb (9.8ms)
+Rendered comments/_form.html.erb (3.8ms)
+Rendered posts/show.html.erb within layouts/application (96.8ms)
+Completed 200 OK in 111ms (Views: 101.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at Mon Nov 15 00:48:42 +0200 2010
+  Processing by CommentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+Completed   in 4ms
+
+ActionView::MissingTemplate (Missing template comments/show with {:handlers=>[:rjs, :rhtml, :builder, :erb, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/spyroslivathinos/web_dev/thinkcactus/app/views"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:58:24 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Rendered comments/_comment.html.erb (9.9ms)
+Rendered comments/_form.html.erb (3.8ms)
+Rendered posts/show.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 51ms (Views: 39.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 15 00:58:27 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (10.4ms)
+Rendered posts/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 28ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Mon Nov 15 00:58:31 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 1)) AS subquery
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Rendered comments/_comment.html.erb (10.4ms)
+Rendered comments/_form.html.erb (4.0ms)
+Rendered posts/show.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 51ms (Views: 39.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at Mon Nov 15 00:58:33 +0200 2010
+
+AbstractController::ActionNotFound (The action 'show' could not be found for CommentsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 15 01:20:30 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (10.1ms)
+Rendered posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 27ms (Views: 17.5ms | ActiveRecord: 0.5ms)
