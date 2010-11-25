@@ -3,8 +3,8 @@
 	<div class="post">
 		<p class="korny-type"><%= @post.title %></p>
 		<img class="bubble" src="/img/thought_bubble.png" alt="" />
-		<p class="date-type"><%= @post.created_at.strftime(" %b %d %Y") %></p>
-		<p class="normal-type embed"><%= @post.body %></p>
+		<p class="date-type embed"><%= @post.created_at.strftime(" %b %d %Y") %></p>
+		<%= simple_format(@post.body) %>
 
 		<% if User == @post.author %>
 			<% link_to "edit" %>
@@ -23,9 +23,9 @@
 			
 		</ul>
 	
-		<%= link_to 'Back to posts', posts_path %>
+		<% #link_to 'Back to posts', posts_path %>
 		
-		<p>Add a comment:</p>
+		<p class="korny-type-small">Add your thoughts</p>
 
 		<%= render "comments/form" %>
 		

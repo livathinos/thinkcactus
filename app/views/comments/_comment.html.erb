@@ -1,13 +1,10 @@
-<li>
-	<p class="date-type">Posted <%= comment.created_at.strftime("%b %d %Y") %></p>
-	<p class="date-type"><%= comment.author_name %></p>
+<li class=" top-space bottom-space">
+	<a href="<% if comment.author_url != nil %>  
+			 	<%= comment.author_url %> 
+			 <% else 
+			    print '#' 
+			 end %>">
+		<%= comment.author_name %>
+	</a><span class="normal-type-small">Posted <%= comment.created_at.strftime("%b %d %Y") %></p>
 	<p class="normal-type embed"><%= comment.body %></p>
-	
-	<%= 
-	#show a link to be able to delete comments.
-	
-	#link_to 'Delete comment', [comment.post, comment],
-	# 			:confirm => 'Are you sure?',
-	#			:method => :delete
-	%>
 </li>

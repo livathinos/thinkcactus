@@ -58,6 +58,8 @@
 	color: #999999; 
 }
 
+.top-space { margin-top: 20px; display: block;}
+.bottom-space { margin-bottom: 20px; display: block; }
 #upper-container p { padding-top: 5px; }
 
 /*-------------------------
@@ -285,6 +287,18 @@ html {}
 #comments li { display: block; }
 
 #new_comment { float: left; }
+
+#comment_body { width: 400px; height: 150px;}
+
+#new_comment .field label { float: left; width: 110px; padding: 10px 10px 10px 0; clear: left;}
+
+#new_comment .field input { float: left; margin: 10px; border: none; height: 20px; width: 270px;}
+
+#new_comment .actions input { float: left; margin: 10px 10px 10px 0; border: 1px solid #CCCCCC; height: 20px; width: 200px;}
+#comment_author_name,
+#comment_author_url {}
+
+#comment_author_url { }
 /*-------------------------
  *	[CONTENT] WORK
 -------------------------*/
