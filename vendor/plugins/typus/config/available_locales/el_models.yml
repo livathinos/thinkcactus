@@ -1,0 +1,13 @@
+el:
+  activerecord:
+    models:
+      typus_user:"Χρήστης Typus"
+    attributes:
+      typus_user:
+        email:
+        first_name:"Όνομα"
+        last_name:"Επώνυμο"
+        password:"Κωδικός"
+        password_confirmation:"Επιβεβαίωση κωδικού"
+        status:"Κατάσταση"
+        role:"Ρόλος"

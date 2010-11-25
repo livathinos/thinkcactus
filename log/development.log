@@ -6926,3 +6926,473 @@ Rendered comments/_comment.html.erb (4.4ms)
 Rendered comments/_form.html.erb (4.1ms)
 Rendered posts/show.html.erb within layouts/application (31.6ms)
 Completed 200 OK in 50ms (Views: 37.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at Thu Nov 25 13:32:00 +0200 2010
+  Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (14.7ms)[0m  SELECT "users".* FROM "users" LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (32.3ms)
+Completed 200 OK in 70ms (Views: 48.9ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at Thu Nov 25 13:32:07 +0200 2010
+  Processing by Admin::PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "posts"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "posts"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (2.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (44.1ms)
+Completed 200 OK in 78ms (Views: 57.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 13:32:10 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1)
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (6.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (114.2ms)
+Completed 200 OK in 142ms (Views: 128.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/works" for 127.0.0.1 at Thu Nov 25 13:32:13 +0200 2010
+  Processing by Admin::WorksController#index as HTML
+  [1m[36mWork Load (0.2ms)[0m  [1mSELECT "works".* FROM "works" LIMIT 15 OFFSET 0[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "works"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "works"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (68.7ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (93.3ms)
+Completed 200 OK in 112ms (Views: 106.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at Thu Nov 25 13:32:15 +0200 2010
+  Processing by Admin::PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "posts"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "posts"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (2.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (46.3ms)
+Completed 200 OK in 64ms (Views: 59.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at Thu Nov 25 13:32:22 +0200 2010
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 15 OFFSET 0[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.2ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (29.5ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/users/new" for 127.0.0.1 at Thu Nov 25 13:32:24 +0200 2010
+  Processing by Admin::UsersController#new as HTML
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_new.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (11.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/new.html.erb within layouts/admin/base (38.2ms)
+Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/users/create" for 127.0.0.1 at Thu Nov 25 13:32:34 +0200 2010
+  Processing by Admin::UsersController#create as HTML
+  Parameters: {"commit"=>"Create User", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "user"=>{"name"=>"Spyros Livathinos", "user_id"=>"admin"}}
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at", "user_id") VALUES ('2010-11-25 11:32:34.175436', 'Spyros Livathinos', '2010-11-25 11:32:34.175436', 0)[0m
+Redirected to http://0.0.0.0:3000/admin/users/edit/1
+Completed 302 Found in 9ms
+
+
+Started GET "/admin/users/edit/1" for 127.0.0.1 at Thu Nov 25 13:32:34 +0200 2010
+  Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (9.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (45.4ms)
+Completed 200 OK in 131ms (Views: 59.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at Thu Nov 25 13:32:39 +0200 2010
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 15 OFFSET 0[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (2.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (110.3ms)
+Completed 200 OK in 127ms (Views: 123.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 13:32:44 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1)[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (6.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (49.0ms)
+Completed 200 OK in 143ms (Views: 62.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 13:33:54 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (4.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (23.4ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("works")[0m
+
+
+Started GET "/admin/" for 127.0.0.1 at Thu Nov 25 14:15:00 +0200 2010
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 14:15:00 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (7.5ms)
+Completed   in 21ms
+
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    12: 
+    13:       <%
+    14:         klass = model.typus_constantize
+    15:         klass_human_name = klass.model_name.human.gsub("/", " ").pluralize
+    16:         admin_items_path = { :controller => "/admin/#{klass.to_resource}" }
+    17:       %>
+    18: 
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) DEFAULT '' NOT NULL, "last_name" varchar(255) DEFAULT '' NOT NULL, "role" varchar(255) NOT NULL, "email" varchar(255) NOT NULL, "status" boolean DEFAULT 'f', "token" varchar(255) NOT NULL, "salt" varchar(255) NOT NULL, "crypted_password" varchar(255) NOT NULL, "preferences" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101125121349')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_admin_users_on_email')[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("works")[0m
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 14:16:12 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (7.3ms)
+Completed   in 20ms
+
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    12: 
+    13:       <%
+    14:         klass = model.typus_constantize
+    15:         klass_human_name = klass.model_name.human.gsub("/", " ").pluralize
+    16:         admin_items_path = { :controller => "/admin/#{klass.to_resource}" }
+    17:       %>
+    18: 
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (65.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (71.3ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 14:17:15 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 25ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Thu Nov 25 14:17:15 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Redirected to http://0.0.0.0:3000/admin/account/new
+Completed 302 Found in 6ms
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at Thu Nov 25 14:17:15 +0200 2010
+  Processing by Admin::AccountController#new as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/account/new.html.erb within layouts/admin/session (7.4ms)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/admin/account" for 127.0.0.1 at Thu Nov 25 14:17:24 +0200 2010
+  Processing by Admin::AccountController#create as HTML
+  Parameters: {"commit"=>"Sign up", "typus_user"=>{"email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓"}
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+  [1m[36mAdminUser Load (0.1ms)[0m  [1mSELECT "admin_users"."id" FROM "admin_users" WHERE ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "admin_users" ("created_at", "crypted_password", "email", "first_name", "last_name", "preferences", "role", "salt", "status", "token", "updated_at") VALUES ('2010-11-25 12:17:24.653525', 'c5ad0e615c33f6c55c0a64f67b64196d6d6e4dff', 'livathinos.spyros@gmail.com', '', '', '--- 
+:locale: en
+', 'admin', '634c23980e4a8f51f453a4eddc9e174b4f0ea149', 't', 'c2dfbbfbcd20', '2010-11-25 12:17:24.653525')
+Redirected to http://0.0.0.0:3000/admin/account/c2dfbbfbcd20
+Completed 302 Found in 43ms
+
+
+Started GET "/admin/account/c2dfbbfbcd20" for 127.0.0.1 at Thu Nov 25 14:17:24 +0200 2010
+  Processing by Admin::AccountController#show as HTML
+  Parameters: {"id"=>"c2dfbbfbcd20"}
+  [1m[36mAdminUser Load (0.7ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."token" = 'c2dfbbfbcd20') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/admin_users/edit/1
+Completed 302 Found in 14ms
+
+
+Started GET "/admin/admin_users/edit/1" for 127.0.0.1 at Thu Nov 25 14:17:24 +0200 2010
+  Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (65.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.6ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.6ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (27.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (123.2ms)
+Completed 200 OK in 143ms (Views: 138.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/admin_users/update/1" for 127.0.0.1 at Thu Nov 25 14:17:52 +0200 2010
+  Processing by Admin::AdminUsersController#update as HTML
+  Parameters: {"commit"=>"Save Admin user", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "admin_user"=>{"password_confirmation"=>"[FILTERED]", "language"=>"en", "role"=>"admin", "last_name"=>"Livathinos", "password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com", "first_name"=>"Spyros"}, "id"=>"1"}
+  [1m[35mAdminUser Load (0.8ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users"."id" FROM "admin_users" WHERE ("admin_users"."email" = 'livathinos.spyros@gmail.com') AND ("admin_users".id <> 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "admin_users" SET "crypted_password" = 'dcd5bf1e52058c201cfe371ba81ed52909ce1ed0', "first_name" = 'Spyros', "last_name" = 'Livathinos', "preferences" = '--- 
+:locale: en
+', "updated_at" = '2010-11-25 12:17:52.417294' WHERE ("admin_users"."id" = 1)[0m
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+Redirected to http://0.0.0.0:3000/admin/admin_users/edit/1
+Completed 302 Found in 90ms
+
+
+Started GET "/admin/admin_users/edit/1" for 127.0.0.1 at Thu Nov 25 14:17:52 +0200 2010
+  Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (28.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (57.9ms)
+Completed 200 OK in 76ms (Views: 71.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at Thu Nov 25 14:18:07 +0200 2010
+  Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (1.8ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (1.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (3.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (54.9ms)
+Completed 200 OK in 74ms (Views: 68.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 14:18:16 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (6.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (30.5ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Thu Nov 25 14:18:25 +0200 2010
+  Processing by Admin::SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E="}
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 1ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Thu Nov 25 14:18:25 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (3.8ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at Thu Nov 25 14:18:29 +0200 2010
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 14:18:30 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 2ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Thu Nov 25 14:18:30 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (5.3ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Thu Nov 25 14:18:50 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓"}
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/dashboard
+Completed 302 Found in 3ms
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 14:18:50 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (7.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (31.2ms)
+Completed 200 OK in 116ms (Views: 112.5ms | ActiveRecord: 0.6ms)

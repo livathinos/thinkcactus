@@ -1,0 +1,117 @@
+# Greek (el) translations for Typus (template)
+# by Spyros Livathinos <livathinos.spyros@gmail.com>
+
+<language>:
+
+  "A valid token is required": "Απαιτείται σωστό token"
+  "Actions": "Δράσεις"
+  "Active": "Ενεργό"
+  "Add": "Νέο"
+  "Add %{resource}": "Νέο %{resource}"
+  "Add new": "Πρόσθεση νέου"
+  "Are you sure?": "Είσαστε σίγουροι;"
+  "Are you sure you want to leave this page?": "Είσαστε σίγουροι ότι επιθυμείτε να εγκαταλείψετε την παρούσα σελίδα;"
+  "Are you sure you want to sign out and end your session?": "Είσαστε σίγουροι ότι επιθυμείτε να αποσυνδεθείτε και να τερματίσετε το session;"
+  "As you're not the admin or the owner of this record you cannot edit it":"Δεν έχετε εισέλθει ως διαχειριστής ή ο χρήστης που έχει δημιουργήσει το παρόν αντικείμενο και δεν μπορείτε να το τροποποιήσετε"
+
+  "Change %{attribute}?":"Τροποποίηση του %{attribute};"
+  "Change password":"Αλλαγή κωδικού"
+  "Checked if active":""
+  "Click OK to continue, or click Cancel to stay on this page":"Επιλέξτε ΟΚ για συνέχεια, και Cancel για να παραμείνετε στην παρούσα σελίδα"
+  "Create %{resource}":"Δημιουργία %{resource}"
+  "Create one now":"Δημιουργία τώρα"
+
+  "Dashboard":"Πανόπτης"
+  "Do you want to cancel it?":"Θέλετε να ακυρώσετε την ενέργεια;"
+  "Down":"Κάτω"
+
+  "Edit":"Επεξεργασία"
+  "Enter your email below to create the first user":"Εισάγετε το email σας παρακάτω για να δημιουργηθεί ο πρώτος χρήστης"
+  "Error! Typus User or role doesn't exist":"Σφάλμα! Ο Typus χρήστης ή ρόλος δεν υφίσταται"
+
+  "False":"Σφάλμα"
+  "Filter":"Φίλτρο"
+  "Filter by %{attribute}":"Φιλτράρισμα ως πρός %{attribute}"
+
+  "Go to":"Μετάβαση σε"
+
+  "I remember my password":"Θυμάμαι τον κωδικό μου"
+  "If you didn't request a password update, you can ignore this message":"Στην περίπτωση που δεν έχετε ζητήσει ανανέωση του κωδικού σας μπορείτε να αγνοήσετε αυτό το μήνυμα"
+  "If you have made any changes to the fields without clicking the Save/Update entry button, your changes will be lost":"Εάν έχετε κάνει αλλαγές στα πεδία χωρίς να έχετε επιλέξει το πλήκτρο Αποθήκευσης/Ενημέρωσης οι αλλαγές σας πρόκειται ωα χαθούν" 
+  "Inactive":"Ανενεργός"
+
+  "Last few days":"Τελευταίες ημέρες"
+  "Last 30 days":"Τελευταίες 30 ημέρες"
+  "Last 7 days":"Τελευταίες 7 ημέρες"
+  "List":"Λίστα"
+  "Logged as":"Συνδεδεμένος ως"
+  "Login":"Σύνδεση"
+
+  "New":"Νέο"
+  "Next":"Επόμενο"
+
+  "Options":"Επιλογές"
+
+  "Password recovery link sent to your email":"Ο σύνδεσμος ανάκτησης κωδικού έχει αποσταλεί στο email σας"
+  "Previous":"Προηγούμενο"
+
+  "Record moved %{to}":""
+  "Recover password":
+  "Remove":
+  "Remove %{attribute}":
+  "Remove %{resource}?":
+  "Remove filter":
+  "Remove search":
+  "Reset password":
+  "Resources":
+
+  "Save %{resource}":
+  "Search":
+  "Search by":
+  "Send us feedback":
+  "Setup":
+  "Show":
+  "Show %{resource}":
+  "Sign in":
+  "Sign out":
+  "Sign up":
+  "Submit a bug report":
+  "System Users Administration":
+
+  "That doesn't seem like a valid email address":
+  "There are no %{records}":
+  "There are no %{records} under this filter":
+  "Today":
+  "Toggle is disabled":
+  "True":
+
+  "Unrelate %{unrelate_model} from %{unrelate_model_from}?":
+  "Up":
+
+  "View all %{attribute}":
+  "View site":
+
+  "You're adding a new %{resource_from}":
+  "You're adding a new %{resource_from} to %{resource_to}":
+  "You're not allowed to toggle status":
+  "You're not allowed to remove Typus Users":
+  "You're updating a %{resource_from}":
+  "You're updating a %{resource_from} for %{resource_to}":
+  "You can update your password at":
+  "You can't change your role":
+  "You can't remove yourself":
+  "You can't toggle your status":
+
+  "%{attachment} can't be removed":
+  "%{attachment} removed":
+  "%{current_user_role} is not able to perform this action. (%{action})":
+  "%{model} filtered by %{filtered_by}":
+  "%{model} successfully created":
+  "%{model} successfully removed":
+  "%{model} successfully updated":
+  "%{model} %{attribute} changed":
+  "%{model_a} cannot be related to %{model_b}":
+  "%{model_a} cannot be unrelated from %{model_b}":
+  "%{model_a} related to %{model_b}":
+  "%{model_a} successfully assigned to %{model_b}":
+  "%{model_a} unrelated from %{model_b}":
