@@ -10243,3 +10243,1159 @@ Rendered comments/_comment.html.erb (5.4ms)
 Rendered comments/_form.html.erb (4.4ms)
 Rendered posts/show.html.erb within layouts/application (40.1ms)
 Completed 200 OK in 136ms (Views: 47.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:06:25 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (5.4ms)
+Rendered comments/_form.html.erb (4.4ms)
+Rendered posts/show.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 125ms (Views: 46.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:06:34 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (5.8ms)
+Rendered comments/_form.html.erb (4.3ms)
+Rendered posts/show.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 125ms (Views: 44.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:10:00 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (6.4ms)
+Rendered comments/_form.html.erb (5.3ms)
+Rendered posts/show.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 150ms (Views: 55.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:12:53 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"Blabla", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author_name", "author_url", "body", "created_at", "post_id", "title", "updated_at") VALUES ('', '', 'Blabla', '2010-11-25 16:12:53.745740', 7, NULL, '2010-11-25 16:12:53.745740')
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 33ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:12:53 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (5.7ms)
+Rendered comments/_form.html.erb (4.5ms)
+Rendered posts/show.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 129ms (Views: 46.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:21:26 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (6.4ms)
+Rendered comments/_form.html.erb (4.9ms)
+Rendered posts/show.html.erb within layouts/application (107.3ms)
+Completed 200 OK in 126ms (Views: 113.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:21:29 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("author_name", "author_url", "body", "created_at", "post_id", "title", "updated_at") VALUES ('', '', '', '2010-11-25 16:21:29.985768', 7, NULL, '2010-11-25 16:21:29.985768')
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 34ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:21:30 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (6.2ms)
+Rendered comments/_form.html.erb (4.7ms)
+Rendered posts/show.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 59ms (Views: 46.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:30:19 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (6.3ms)
+Rendered comments/_form.html.erb (4.6ms)
+Rendered posts/show.html.erb within layouts/application (113.2ms)
+Completed 200 OK in 132ms (Views: 119.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:30:23 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("author_name", "author_url", "body", "created_at", "post_id", "title", "updated_at") VALUES ('', '', '', '2010-11-25 16:30:23.518260', 7, NULL, '2010-11-25 16:30:23.518260')
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 103ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:30:23 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (7.0ms)
+Rendered comments/_form.html.erb (4.8ms)
+Rendered posts/show.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 64ms (Views: 47.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:30:39 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)[0m
+Rendered comments/_comment.html.erb (6.7ms)
+Rendered comments/_form.html.erb (6.7ms)
+Rendered posts/show.html.erb within layouts/application (66.8ms)
+Completed 200 OK in 90ms (Views: 73.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:30:42 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("author_name", "author_url", "body", "created_at", "post_id", "title", "updated_at") VALUES ('', '', '', '2010-11-25 16:30:42.258122', 7, NULL, '2010-11-25 16:30:42.258122')[0m
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 36ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:30:42 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)[0m
+Rendered comments/_comment.html.erb (6.7ms)
+Rendered comments/_form.html.erb (4.2ms)
+Rendered posts/show.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 126ms (Views: 111.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:33:23 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)[0m
+Rendered comments/_comment.html.erb (75.2ms)
+Rendered comments/_form.html.erb (4.8ms)
+Rendered posts/show.html.erb within layouts/application (109.9ms)
+Completed 200 OK in 127ms (Views: 115.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:33:26 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 34ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:33:26 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (7.0ms)
+Rendered comments/_form.html.erb (4.4ms)
+Rendered posts/show.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 59ms (Views: 46.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:33:36 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 102ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:33:36 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)[0m
+Rendered comments/_comment.html.erb (7.6ms)
+Rendered comments/_form.html.erb (4.3ms)
+Rendered posts/show.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 63ms (Views: 48.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:33:42 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 33ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:33:42 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (7.1ms)
+Rendered comments/_form.html.erb (4.3ms)
+Rendered posts/show.html.erb within layouts/application (103.1ms)
+Completed 200 OK in 122ms (Views: 109.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Thu Nov 25 18:33:49 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (6.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (30.7ms)
+Completed 200 OK in 75ms (Views: 42.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at Thu Nov 25 18:33:52 +0200 2010
+  Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" LIMIT 15 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1)
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (68.6ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.3ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "posts"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "posts"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (6.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (123.3ms)
+Completed 200 OK in 162ms (Views: 138.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 18:33:56 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7)[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (18.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (67.1ms)
+Completed 200 OK in 179ms (Views: 81.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/admin/comments/destroy/8" for 127.0.0.1 at Thu Nov 25 18:34:01 +0200 2010
+  Processing by Admin::CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "id"=>"8"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments"."id" = 8) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "comments" WHERE ("comments"."id" = 8)
+Redirected to http://0.0.0.0:3000/admin/comments
+Completed 302 Found in 9ms
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 18:34:01 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7)[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (15.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (65.7ms)
+Completed 200 OK in 162ms (Views: 79.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/comments/destroy/7" for 127.0.0.1 at Thu Nov 25 18:34:04 +0200 2010
+  Processing by Admin::CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "id"=>"7"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments"."id" = 7) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "comments" WHERE ("comments"."id" = 7)
+Redirected to http://0.0.0.0:3000/admin/comments
+Completed 302 Found in 8ms
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 18:34:04 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7)[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.0ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (13.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (130.0ms)
+Completed 200 OK in 159ms (Views: 143.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/comments/destroy/6" for 127.0.0.1 at Thu Nov 25 18:34:07 +0200 2010
+  Processing by Admin::CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "id"=>"6"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments"."id" = 6) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "comments" WHERE ("comments"."id" = 6)
+Redirected to http://0.0.0.0:3000/admin/comments
+Completed 302 Found in 7ms
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 18:34:07 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7)[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (10.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (60.2ms)
+Completed 200 OK in 89ms (Views: 73.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/comments/destroy/5" for 127.0.0.1 at Thu Nov 25 18:34:09 +0200 2010
+  Processing by Admin::CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "id"=>"5"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments"."id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "comments" WHERE ("comments"."id" = 5)
+Redirected to http://0.0.0.0:3000/admin/comments
+Completed 302 Found in 8ms
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 18:34:09 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7)[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (8.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (58.3ms)
+Completed 200 OK in 87ms (Views: 71.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:34:12 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)[0m
+Rendered comments/_comment.html.erb (5.4ms)
+Rendered comments/_form.html.erb (4.3ms)
+Rendered posts/show.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 126ms (Views: 46.1ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/posts/7/comments" for 127.0.0.1 at Thu Nov 25 18:34:16 +0200 2010
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"author_name"=>"", "body"=>"", "author_url"=>""}, "commit"=>"Create Comment", "authenticity_token"=>"36RC0FZ1YOn+7jSpflqn3h32B2CFjxnD4w+fBh9/o8E=", "utf8"=>"✓", "post_id"=>"7"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+Redirected to http://0.0.0.0:3000/posts/7
+Completed 302 Found in 38ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 18:34:16 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)
+Rendered comments/_comment.html.erb (5.5ms)
+Rendered comments/_form.html.erb (71.9ms)
+Rendered posts/show.html.erb within layouts/application (107.5ms)
+Completed 200 OK in 125ms (Views: 113.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/comments" for 127.0.0.1 at Thu Nov 25 18:34:20 +0200 2010
+  Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" LIMIT 15 OFFSET 0
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7)[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.3ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "comments"
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "comments"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (9.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (73.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (130.1ms)
+Completed 200 OK in 158ms (Views: 143.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 18:40:09 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered posts/_post.html.erb (15.9ms)
+Rendered posts/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 35ms (Views: 25.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 18:54:21 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post_index.html.erb (13.4ms)
+Rendered posts/index.html.erb within layouts/application (15.3ms)
+Completed   in 33ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x10360d818>:0x103603f70>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2175739800_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2175793360_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 18:54:45 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post_index.html.erb (0.8ms)
+Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed   in 19ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= @post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= @post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2172118100_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2172135100_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:14:02 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post_index.html.erb (13.7ms)
+Rendered posts/index.html.erb within layouts/application (15.4ms)
+Completed   in 33ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x1033f7b78>:0x1033f18e0>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2174531500_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2174692600_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:19:40 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post_index.html.erb (75.6ms)
+Rendered posts/index.html.erb within layouts/application (77.2ms)
+Completed   in 94ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x102e70c18>:0x102e6ef08>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2171812600_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2171824880_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:19:41 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post_index.html.erb (13.4ms)
+Rendered posts/index.html.erb within layouts/application (15.0ms)
+Completed   in 32ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x103000a10>:0x102ff7d48>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2172604560_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2172626440_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:19:53 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post_index.html.erb (0.8ms)
+Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed   in 85ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= @post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2175971440_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2176017360_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:20:02 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+ERROR: compiling _app_views_posts__post_index_html_erb__419120732_2172314480_7885004 RAISED compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post_index.html.erb:2: syntax error, unexpected tASSOC, expecting ')'
+...tput_buffer.append= ( @post => title );@output_buffer.safe_c...
+                              ^
+Function body:           def _app_views_posts__post_index_html_erb__419120732_2172314480_7885004(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "posts/_post_index";_old_output_buffer = @output_buffer;post_index = local_assigns[:post_index];post_index_counter = local_assigns[:post_index_counter];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="post">
+	<p class="korny-type">');@output_buffer.append= ( @post => title );@output_buffer.safe_concat('</p>
+	<img class="bubble" src="img/thought_bubble.png" alt="" />
+	<p class="date-type embed">');@output_buffer.append= ( post.created_at.strftime(" %b %d %Y") );@output_buffer.safe_concat('</p>
+');	 
+	
+	string = post.body
+	count = 50
+	
+	if string.length >= count
+		shortened = string[0, count]
+		split = shortened.split(/\s/)
+		words = split.length 
+@output_buffer.safe_concat('		');@output_buffer.append= ( split[0, words-1].join(" ") + '...' );@output_buffer.safe_concat('
+');	 else 
+@output_buffer.safe_concat('		');@output_buffer.append= ( string );@output_buffer.safe_concat('
+');	 end 
+@output_buffer.safe_concat('	
+	');@output_buffer.append= ( link_to "Full post", post, :class => "wholelink" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post_index.html.erb:23:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:261:in `collection_with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:258:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:258:in `collection_with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:241:in `render_collection'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:218:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:216:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/partials.rb:334:in `_render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:22:in `render'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2172325840_0'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:135:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/spyroslivathinos/web_dev/thinkcactus/app/controllers/posts_controller.rb:11:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__84203013__process_action__199225275__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.1/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered posts/_post_index.html.erb (0.8ms)
+Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed   in 19ms
+
+ActionView::Template::Error (compile error
+/Users/spyroslivathinos/web_dev/thinkcactus/app/views/posts/_post_index.html.erb:2: syntax error, unexpected tASSOC, expecting ')'
+...tput_buffer.append= ( @post => title );@output_buffer.safe_c...
+                              ^):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= @post => title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:23:in `compile'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2172325840_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:20:11 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post_index.html.erb (13.9ms)
+Rendered posts/index.html.erb within layouts/application (15.5ms)
+Completed   in 98ms
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x103640448>:0x10363e558>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= posts.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2175874980_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2175919540_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:20:15 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered posts/_post_index.html.erb (1.9ms)
+Rendered posts/index.html.erb within layouts/application (3.4ms)
+Completed   in 19ms
+
+ActionView::Template::Error (undefined method `title' for #<Class:0x102f795d8>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= Post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2172195340_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2172206760_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:21:42 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post_index.html.erb (13.2ms)
+Rendered posts/index.html.erb within layouts/application (14.9ms)
+Completed   in 32ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x10348da60>:0x103486300>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2174998560_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2175016980_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:25:58 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post_index.html.erb (0.6ms)
+Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed   in 18ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= @post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2171942040_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2171951260_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (72.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (77.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:26:03 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post_index.html.erb (13.5ms)
+Rendered posts/index.html.erb within layouts/application (15.2ms)
+Completed   in 32ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x103348a10>:0x103342ef8>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2174338840_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2174355320_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:28:41 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post_index.html.erb (77.3ms)
+Rendered posts/index.html.erb within layouts/application (78.9ms)
+Completed   in 96ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x102e3adc0>:0x102e39088>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2171702800_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2171714520_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:28:42 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post_index.html.erb (13.1ms)
+Rendered posts/index.html.erb within layouts/application (14.7ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x103003850>:0x103000b78>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 
+  app/views/posts/_post_index.html.erb:2:in `_app_views_posts__post_index_html_erb__419120732_2172593580_7885004'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2172635460_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:28:51 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (6.4ms)
+Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 26ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 19:29:02 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)[0m
+Rendered comments/_comment.html.erb (5.7ms)
+Rendered comments/_form.html.erb (4.5ms)
+Rendered posts/show.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 122ms (Views: 110.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:29:11 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (6.3ms)
+Rendered posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 25ms (Views: 15.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:29:41 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (13.1ms)
+Rendered posts/index.html.erb within layouts/application (14.9ms)
+Completed   in 99ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x1036a9e48>:0x1036a4420>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= post.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 
+  app/views/posts/_postindex.html.erb:2:in `_app_views_posts__postindex_html_erb__2086204942_2176083340_8071212'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2176126580_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:30:33 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_postindex.html.erb (15.5ms)
+Rendered posts/index.html.erb within layouts/application (17.1ms)
+Completed   in 34ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x102f20a00>:0x102f1dd50>):
+    1: <div class="post">
+    2: 	<p class="korny-type"><%= postindex.title %></p>
+    3: 	<img class="bubble" src="img/thought_bubble.png" alt="" />
+    4: 	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
+    5: 	<% 
+    6: 	string = post.body
+    7: 	count = 50
+  app/views/posts/_postindex.html.erb:4:in `_app_views_posts__postindex_html_erb__2086204942_2172174060_8071212'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__1872381992_2172183040_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:30:57 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (5.3ms)
+Rendered posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 26ms (Views: 15.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:31:12 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_postindex.html.erb (6.9ms)
+Rendered posts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 92ms (Views: 16.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:31:22 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (6.7ms)
+Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 26ms (Views: 16.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:31:37 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_postindex.html.erb (6.7ms)
+Rendered posts/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 26ms (Views: 16.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:35:25 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (7.1ms)
+Rendered posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 27ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:36:03 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_postindex.html.erb (7.1ms)
+Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 92ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:36:16 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (6.7ms)
+Rendered posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 26ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:36:28 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_postindex.html.erb (7.1ms)
+Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 26ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:36:45 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (6.8ms)
+Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 27ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:36:54 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_postindex.html.erb (7.1ms)
+Rendered posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 91ms (Views: 16.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:37:12 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (6.8ms)
+Rendered posts/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 25ms (Views: 15.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:38:25 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_postindex.html.erb (5.4ms)
+Rendered posts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 25ms (Views: 15.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:38:42 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_postindex.html.erb (5.0ms)
+Rendered posts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:39:17 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_post.html.erb (7.0ms)
+Rendered posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 90ms (Views: 80.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 25 19:39:29 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_post.html.erb (6.4ms)
+Rendered posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 90ms (Views: 15.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at Thu Nov 25 19:39:31 +0200 2010
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 7) LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 7)) AS subquery
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 7)[0m
+Rendered comments/_comment.html.erb (5.2ms)
+Rendered comments/_form.html.erb (4.3ms)
+Rendered posts/show.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 57ms (Views: 45.0ms | ActiveRecord: 0.9ms)

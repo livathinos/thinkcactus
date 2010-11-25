@@ -1,13 +1,12 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
 
 	<div class="field">
-		<%# f.label :body %>
-		<%= f.text_area :body %>
+		<%= f.text_area :body, :required => true %>
 	</div><!--end of .field-->
 
 	<div class="field">
 		<%= f.label 'Your name' %>
-		<%= f.text_field :author_name %>
+		<%= f.text_field :author_name, :required => true %>
 	</div><!--end of .field-->
 	
 	<div class="field">
