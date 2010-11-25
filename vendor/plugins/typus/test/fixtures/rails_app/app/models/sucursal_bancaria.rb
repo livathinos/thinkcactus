@@ -1,0 +1,2 @@
+class SucursalBancaria
+end

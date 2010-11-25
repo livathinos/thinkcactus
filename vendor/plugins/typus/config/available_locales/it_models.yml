@@ -1,0 +1,15 @@
+it:
+  activerecord:
+    models:
+      typus_user: "Utente"
+    attributes:
+      typus_user:
+        first_name: "Nome"
+        last_name: "Cognome"
+        email: "E-mail"
+        role: "Ruolo"
+        status: "Stato"
+        preferences: "Preferenze"
+        language: "Lingua"
+        password: "Password"
+        password_confirmation: "Ripeti la password"

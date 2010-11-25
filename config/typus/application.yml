@@ -1,0 +1,44 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Comment:
+  fields:
+    default: author_name, title, post_id, post
+    form: author_name, title, body, post_id, post
+  order_by: 
+  relationships: post
+  filters: 
+  search: title
+  application: thinkcactus
+
+Post:
+  fields:
+    default: title, author_id, published_on, author
+    form: title, body, author_id, published_on, author
+  order_by: 
+  relationships: author, comments
+  filters: 
+  search: title
+  application: thinkcactus
+
+User:
+  fields:
+    default: name, user_id
+    form: name, user_id
+  order_by: 
+  relationships: 
+  filters: 
+  search: name
+  application: thinkcactus
+
+Work:
+  fields:
+    default: 
+    form: 
+  order_by: 
+  relationships: 
+  filters: 
+  search: 
+  application: thinkcactus
+

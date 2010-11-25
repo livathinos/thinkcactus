@@ -17,6 +17,9 @@ gem 'rspec-rails'
 gem 'spork'
 gem 'launchy'
 
+# Typus
+gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

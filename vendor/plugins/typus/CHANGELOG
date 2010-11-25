@@ -1,0 +1,74 @@
+= 3.0.3 (Unreleased)
+
+* Support for has many through relationships. [jmeiss]
+
+* Removed typus pagination module and use `will_paginate` one. Pagination
+  options can be configure overriding `Typus.pagination` variable.
+
+* Queries are now using the table name. [tyx]
+
+* All queries are `unscoped` so we can separate completely the frontend from
+  the backend.
+
+* We can disable sortable tables.
+
+* Fixed url generation bug when using namespaced STI models. [masone]
+
+* Raise an exception if config for model cannot be found. [masone]
+
+* Minor bug fixes and re-styling ...
+
+* Layouts contain metatag with generator information.
+
+* Added missing csrf_meta_tag in `session.html.erb` layout.
+
+* Added constrain to database to avoid duplicated emails.
+
+* FIX: Dates on tables are localized.
+
+* FIX: `@resource.classify.constantize` becomes `@resource.constantize`.
+
+= 3.0.2
+
+* FIX: Use Arel to get the data on lists. After moving to will_paginate I broke
+  the data method, on each list we where "selecting ALL on the table of the
+  current model" (Really ugly bug) [Reported by NateW]
+
+* FIX: If @current_user was being set many times on each request, thanks to
+  rails caching mechanism this was not affecting to the performance. Now we
+  only se the @current_user once. (As it should be.)
+
+= 3.0.1
+
+* After moving from a vendored paginator to will_paginate I removed some stuff
+  which shouldn't be removed, so the 3.0.0 gem is totally broken.
+
+* Force query with postgresql adapter to not be case sensitive [jmeiss]
+
+= 3.0.0
+
+* New gem version compatible with Rails 3.
+
+= Previously
+
+Why a 3.0.0 version? After considering the work done for the Rails 3 transition
+I though it would be a good idea to keep versions syncronized with Rails.
+
+Typus will have the same version numbers as Rails as I considered it's pretty
+tied to it. With each release of Rails, we will take the latest features into
+Typus.
+
+Pending stuff that someday will be done, donations and collaborations are
+accepted.
+
+* Add AJAX, specially when removing and adding new relationships.
+
+* Transversal search and full models search.
+
+* Test the helpers and add some functional testing.
+
+* Nested models.
+
+* Contextual content depending on the role logged.
+
+* Replace typus authentication by devise.
