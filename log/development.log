@@ -11676,3 +11676,1069 @@ Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.7ms)
 Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.7ms)
 Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (53.0ms)
 Completed 200 OK in 190ms (Views: 68.4ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Mon Dec 06 22:49:35 +0200 2010
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Mon Dec 06 22:49:36 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 37ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:49:36 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.3ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (6.0ms)
+Completed 200 OK in 31ms (Views: 13.9ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:49:50 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 34ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:49:50 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (13.2ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:49:58 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 3ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:49:58 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (4.1ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:50:03 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 70ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:50:03 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (3.8ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:50:08 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 3ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:50:08 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (4.5ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:50:15 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 3ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:50:15 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (3.8ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:50:20 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 3ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:50:20 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (4.4ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:50:25 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 4ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at Mon Dec 06 22:50:25 +0200 2010
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/session/new.html.erb within layouts/admin/session (4.8ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/session" for 127.0.0.1 at Mon Dec 06 22:50:32 +0200 2010
+  Processing by Admin::SessionController#create as HTML
+  Parameters: {"commit"=>"Sign in", "typus_user"=>{"password"=>"[FILTERED]", "email"=>"livathinos.spyros@gmail.com"}, "authenticity_token"=>"zr7tgTj/ReV1JveAersKJGQZp04YbM1UYkvTRE8kZ4c=", "utf8"=>"✓"}
+  [1m[35mSQL (0.7ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."status" = 't') AND ("admin_users"."email" = 'livathinos.spyros@gmail.com') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/dashboard
+Completed 302 Found in 4ms
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Mon Dec 06 22:50:32 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (6.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (32.0ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at Mon Dec 06 22:50:39 +0200 2010
+  Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.2ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (1.8ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (3.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (74.1ms)
+Completed 200 OK in 94ms (Views: 88.2ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at Mon Dec 06 22:59:11 +0200 2010
+  Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (1.8ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (51.0ms)
+Completed 200 OK in 70ms (Views: 64.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at Mon Dec 06 23:02:07 +0200 2010
+  Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" LIMIT 15 OFFSET 0[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (59.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (2.3ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (2.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (3.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (118.9ms)
+Completed 200 OK in 180ms (Views: 133.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at Mon Dec 06 23:02:11 +0200 2010
+  Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" LIMIT 15 OFFSET 0[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (1.8ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (2.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (52.7ms)
+Completed 200 OK in 136ms (Views: 65.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Mon Dec 06 23:02:13 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (6.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (30.4ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Mon Dec 06 23:56:52 +0200 2010
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at Mon Dec 06 23:56:52 +0200 2010
+  Processing by Admin::DashboardController#show as HTML
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (6.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (1.4ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (34.3ms)
+Completed 200 OK in 92ms (Views: 45.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at Mon Dec 06 23:56:58 +0200 2010
+  Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE ("admin_users"."id" = 1) LIMIT 1[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (2.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "admin_users"[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/filters/_filters.html.erb (2.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) AS count_id FROM "admin_users"
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (3.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (1.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (57.8ms)
+Completed 200 OK in 78ms (Views: 72.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Dec 11 03:58:53 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (9.7ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/_post.html.erb (82.5ms)
+Rendered posts/index.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 205ms (Views: 143.0ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Dec 11 03:59:46 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (6.9ms)
+Rendered posts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 27ms (Views: 16.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Dec 11 04:00:01 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.2ms)
+Rendered posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 28ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Dec 11 04:00:45 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (68.6ms)
+Rendered posts/index.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 89ms (Views: 78.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Dec 11 04:18:05 +0200 2010
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/_post.html.erb (65.7ms)
+Rendered posts/index.html.erb within layouts/application (68.2ms)
+Completed 200 OK in 86ms (Views: 75.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-21 06:38:05 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-21 06:38:23 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:15:01 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:31:06 +0300
+
+Mysql::Error (Can't connect to local MySQL server through socket '/Applications/MAMP/tmp/mysql/mysql.sock' (2)):
+  
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.3ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:31:37 +0300
+
+Mysql::Error (Unknown database 'blog_dev'):
+  
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:32:21 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Mysql::Error: Table 'blog_dev.posts' doesn't exist: SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Completed   in 130ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'blog_dev.posts' doesn't exist: SELECT `posts`.* FROM `posts` ORDER BY created_at DESC):
+  app/controllers/posts_controller.rb:9:in `index'
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (38.6ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.8ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (166.3ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (272.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+  [1m[35mSQL (117.5ms)[0m  CREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author_id` int(11), `published_on` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101114134523')[0m
+Migrating to CreateUsers (20101114134559)
+  [1m[35mSQL (113.8ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101114134559')[0m
+Migrating to CreateWorks (20101114153828)
+  [1m[35mSQL (112.5ms)[0m  CREATE TABLE `works` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101114153828')[0m
+Migrating to CreateComments (20101114164339)
+  [1m[35mSQL (113.7ms)[0m  CREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `author_name` varchar(255), `title` varchar(255), `body` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101114164339')[0m
+Migrating to AddForeignToComments (20101114210504)
+  [1m[35mSQL (131.8ms)[0m  ALTER TABLE `comments` ADD `post_id` int(11)
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101114210504')[0m
+Migrating to CreateAdminUsers (20101125121349)
+  [1m[35mSQL (139.8ms)[0m  CREATE TABLE `admin_users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255) DEFAULT '' NOT NULL, `last_name` varchar(255) DEFAULT '' NOT NULL, `role` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `status` tinyint(1) DEFAULT 0, `token` varchar(255) NOT NULL, `salt` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `preferences` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW KEYS FROM `admin_users`[0m
+  [1m[35mSQL (133.5ms)[0m  CREATE UNIQUE INDEX `index_admin_users_on_email` ON `admin_users` (`email`)
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101125121349')[0m
+Migrating to AddAuthorUrlToComments (20101125153059)
+  [1m[35mSQL (115.7ms)[0m  ALTER TABLE `comments` ADD `author_url` varchar(255)
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101125153059')[0m
+  [1m[35mSQL (0.8ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.7ms)[0m  [1mdescribe `admin_users`[0m
+  [1m[35mSQL (1.6ms)[0m  SHOW KEYS FROM `admin_users`
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `comments`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW KEYS FROM `comments`
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `posts`[0m
+  [1m[35mSQL (2.1ms)[0m  SHOW KEYS FROM `posts`
+  [1m[36mSQL (1.5ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (3.4ms)[0m  [1mdescribe `works`[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW KEYS FROM `works`
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:41:40 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 67ms (Views: 55.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:42:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 56ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:42:43 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:48:35 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 42ms (Views: 10.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:52:08 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 55ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-04-23 22:52:48 +0300
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2011-04-23 22:52:48 +0300
+  Processing by Admin::DashboardController#show as HTML
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 114ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at 2011-04-23 22:52:48 +0300
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+Redirected to http://0.0.0.0:3000/admin/account/new
+Completed 302 Found in 5ms
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at 2011-04-23 22:52:48 +0300
+  Processing by Admin::AccountController#new as HTML
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `admin_users`
+Completed   in 18ms
+
+I18n::UnknownFileType (can not load translations from /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/bundler/gems/typus-cce030b63211/config/available_locales/language.yml.template, the file type template is not known):
+  
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2011-04-23 22:54:15 +0300
+  Processing by Admin::DashboardController#show as HTML
+Redirected to http://0.0.0.0:3000/admin/session/new
+Completed 302 Found in 2ms
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at 2011-04-23 22:54:15 +0300
+  Processing by Admin::SessionController#new as HTML
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+Redirected to http://0.0.0.0:3000/admin/account/new
+Completed 302 Found in 2ms
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at 2011-04-23 22:54:15 +0300
+  Processing by Admin::AccountController#new as HTML
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `admin_users`
+Completed   in 5ms
+
+I18n::UnknownFileType (can not load translations from /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/bundler/gems/typus-cce030b63211/config/available_locales/language.yml.template, the file type template is not known):
+  
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at 2011-04-23 22:57:46 +0300
+  Processing by Admin::AccountController#new as HTML
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+Completed   in 6ms
+
+I18n::UnknownFileType (can not load translations from /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/bundler/gems/typus-cce030b63211/config/available_locales/language.yml.template, the file type template is not known):
+  
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at 2011-04-23 22:57:48 +0300
+  Processing by Admin::AccountController#new as HTML
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `admin_users`
+Completed   in 5ms
+
+I18n::UnknownFileType (can not load translations from /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/bundler/gems/typus-cce030b63211/config/available_locales/language.yml.template, the file type template is not known):
+  
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at 2011-04-23 22:58:05 +0300
+  Processing by Admin::AccountController#new as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/account/new.html.erb within layouts/admin/session (6.9ms)
+Completed 200 OK in 141ms (Views: 91.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/account" for 127.0.0.1 at 2011-04-23 22:58:11 +0300
+  Processing by Admin::AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "typus_user"=>{"email"=>"livathinos.spyros@gmail.com"}, "commit"=>"Sign up"}
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM `admin_users`
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.2ms)[0m  SHOW TABLES
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.`id` FROM `admin_users` WHERE (`admin_users`.`email` = BINARY 'livathinos.spyros@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  describe `admin_users`
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO `admin_users` (`first_name`, `last_name`, `role`, `email`, `status`, `token`, `salt`, `crypted_password`, `preferences`, `created_at`, `updated_at`) VALUES ('', '', 'admin', 'livathinos.spyros@gmail.com', 1, '9cd40d7cb67e', '00d3e0c933300376add557ca94c8dd05f4f676ca', '00f2e935bc50971b2a70427fc146a87982404499', '--- \n:locale: en\n', '2011-04-23 19:58:11', '2011-04-23 19:58:11')[0m
+  [1m[35mSQL (0.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/admin/account/9cd40d7cb67e
+Completed 302 Found in 142ms
+
+
+Started GET "/admin/account/9cd40d7cb67e" for 127.0.0.1 at 2011-04-23 22:58:11 +0300
+  Processing by Admin::AccountController#show as HTML
+  Parameters: {"id"=>"9cd40d7cb67e"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`token` = '9cd40d7cb67e' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/admin_users/edit/1
+Completed 302 Found in 24ms
+
+
+Started GET "/admin/admin_users/edit/1" for 127.0.0.1 at 2011-04-23 22:58:11 +0300
+  Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (1.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (29.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (73.0ms)
+Completed 200 OK in 96ms (Views: 90.2ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/admin/admin_users/update/1" for 127.0.0.1 at 2011-04-23 22:58:33 +0300
+  Processing by Admin::AdminUsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "admin_user"=>{"first_name"=>"Spyros", "last_name"=>"Livathinos", "role"=>"admin", "email"=>"livathinos.spyros@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "language"=>"en"}, "commit"=>"Save Admin user", "id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.`id` FROM `admin_users` WHERE (`admin_users`.`email` = BINARY 'livathinos.spyros@gmail.com') AND (`admin_users`.id <> 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (2.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (25.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (50.4ms)
+Completed 200 OK in 70ms (Views: 61.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/admin/admin_users/update/1" for 127.0.0.1 at 2011-04-23 22:58:41 +0300
+  Processing by Admin::AdminUsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "admin_user"=>{"first_name"=>"Spyros", "last_name"=>"Livathinos", "role"=>"admin", "email"=>"livathinos.spyros@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "language"=>"en"}, "commit"=>"Save Admin user", "id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.`id` FROM `admin_users` WHERE (`admin_users`.`email` = BINARY 'livathinos.spyros@gmail.com') AND (`admin_users`.id <> 1) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `admin_users` SET `first_name` = 'Spyros', `last_name` = 'Livathinos', `crypted_password` = '014dad4004f066240aa4edde934f4f48f145a4a0', `updated_at` = '2011-04-23 19:58:41', `preferences` = '--- \n:locale: en\n' WHERE `admin_users`.`id` = 1[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin/admin_users/edit/1
+Completed 302 Found in 11ms
+
+
+Started GET "/admin/admin_users/edit/1" for 127.0.0.1 at 2011-04-23 22:58:41 +0300
+  Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (1.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_password.html.erb (0.7ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_selector.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (25.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (52.5ms)
+Completed 200 OK in 68ms (Views: 62.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2011-04-23 22:58:44 +0300
+  Processing by Admin::DashboardController#show as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (5.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (42.5ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (70.0ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2011-04-23 22:58:46 +0300
+  Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` LIMIT 15 OFFSET 0
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.6ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (73.6ms)
+Completed 200 OK in 94ms (Views: 86.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/posts/new" for 127.0.0.1 at 2011-04-23 22:59:10 +0300
+  Processing by Admin::PostsController#new as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.2ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_new.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (3.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (92.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/new.html.erb within layouts/admin/base (120.3ms)
+Completed 200 OK in 137ms (Views: 131.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/posts/create" for 127.0.0.1 at 2011-04-23 22:59:48 +0300
+  Processing by Admin::PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "post"=>{"title"=>"New Post", "body"=>"This is a new post!!\r\n\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n", "author_id"=>"", "published_on(1i)"=>"2011", "published_on(2i)"=>"4", "published_on(3i)"=>"23"}, "commit"=>"Create Post"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  describe `posts`
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO `posts` (`title`, `body`, `author_id`, `published_on`, `created_at`, `updated_at`) VALUES ('New Post', 'This is a new post!!\r\n\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n', NULL, '2011-04-23', '2011-04-23 19:59:48', '2011-04-23 19:59:48')[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/admin/posts/edit/1
+Completed 302 Found in 12ms
+
+
+Started GET "/admin/posts/edit/1" for 127.0.0.1 at 2011-04-23 22:59:48 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (21.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (52.2ms)
+Completed 200 OK in 68ms (Views: 62.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 22:59:52 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (60.6ms)
+Rendered posts/index.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 84ms (Views: 71.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/posts/update/1" for 127.0.0.1 at 2011-04-23 23:00:20 +0300
+  Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "post"=>{"title"=>"Older Post", "body"=>"This is an older post!!\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n", "author_id"=>"", "published_on(1i)"=>"2011", "published_on(2i)"=>"4", "published_on(3i)"=>"23"}, "commit"=>"Save Post", "id"=>"1"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  UPDATE `posts` SET `title` = 'Older Post', `body` = 'This is an older post!!\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n', `updated_at` = '2011-04-23 20:00:20' WHERE `posts`.`id` = 1
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/posts/edit/1
+Completed 302 Found in 9ms
+
+
+Started GET "/admin/posts/edit/1" for 127.0.0.1 at 2011-04-23 23:00:20 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (21.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (52.1ms)
+Completed 200 OK in 69ms (Views: 63.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:00:22 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.5ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 30ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:01:58 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:02:11 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.5ms)
+Rendered posts/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 67ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:03:39 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.8ms)
+Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:03:44 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.1ms)
+Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 28ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:03:52 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.7ms)
+Rendered posts/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 29ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:04:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.3ms)
+Rendered posts/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 67ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:04:37 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.6ms)
+Rendered posts/index.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 71ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:04:45 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.3ms)
+Rendered posts/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:06:50 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.3ms)
+Rendered posts/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:07:00 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.6ms)
+Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:07:13 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 69ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:07:19 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.4ms)
+Rendered posts/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 28ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:07:32 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.2ms)
+Rendered posts/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 28ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:09:14 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.3ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:09:39 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.4ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 70ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:09:54 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.1ms)
+Rendered posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 28ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:10:01 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.2ms)
+Rendered posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2011-04-23 23:10:09 +0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` WHERE (`comments`.post_id = 1)
+Rendered comments/_comment.html.erb (0.0ms)
+Rendered comments/_form.html.erb (13.7ms)
+Rendered posts/show.html.erb within layouts/application (78.8ms)
+Completed 200 OK in 100ms (Views: 84.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:10:18 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:12:06 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.2ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:13:09 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:13:20 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.6ms)
+Rendered posts/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 29ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:13:28 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.3ms)
+Rendered posts/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 68ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:13:32 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.2ms)
+Rendered posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:13:37 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.2ms)
+Rendered posts/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 28ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2011-04-23 23:17:17 +0300
+  Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` LIMIT 15 OFFSET 0[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.3ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `posts`
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (2.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (58.8ms)
+Completed 200 OK in 136ms (Views: 69.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/posts/new" for 127.0.0.1 at 2011-04-23 23:17:20 +0300
+  Processing by Admin::PostsController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_new.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (21.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/new.html.erb within layouts/admin/base (49.6ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/posts/create" for 127.0.0.1 at 2011-04-23 23:17:32 +0300
+  Processing by Admin::PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "post"=>{"title"=>"Newer Post", "body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n", "author_id"=>"", "published_on(1i)"=>"2011", "published_on(2i)"=>"4", "published_on(3i)"=>"23"}, "commit"=>"Create Post"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `posts` (`title`, `body`, `author_id`, `published_on`, `created_at`, `updated_at`) VALUES ('Newer Post', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n', NULL, '2011-04-23', '2011-04-23 20:17:33', '2011-04-23 20:17:33')
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/posts/edit/2
+Completed 302 Found in 8ms
+
+
+Started GET "/admin/posts/edit/2" for 127.0.0.1 at 2011-04-23 23:17:33 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.6ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (21.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (52.8ms)
+Completed 200 OK in 69ms (Views: 63.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-23 23:17:37 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.8ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.5ms)

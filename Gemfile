@@ -1,17 +1,17 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.1'
+gem 'rails', '3.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'mysql'
 
 # Cucumber + Rspec
-gem 'capybara'
-gem 'database_cleaner'
-gem 'cucumber-rails'
-gem 'cucumber'
+#gem 'capybara'
+#gem 'database_cleaner'
+#gem 'cucumber-rails'
+#gem 'cucumber'
 gem 'rspec'
 gem 'rspec-rails'
 gem 'spork'
@@ -24,20 +24,16 @@ gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
 
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
+# Haml for our templates
+gem 'haml'
 
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+# Include compass
+gem "compass", ">= 0.10.6"
+
+# Use paul's HTML5boilerplate
+gem 'html5-boilerplate'
