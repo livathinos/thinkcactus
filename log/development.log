@@ -14930,3 +14930,19 @@ Started GET "/" for 127.0.0.1 at 2011-04-24 10:09:35 +0300
 Rendered posts/_post.html.erb (9.0ms)
 Rendered posts/index.html.erb within layouts/application (11.8ms)
 Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:16:12 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (11.0ms)
+Rendered posts/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 33ms (Views: 20.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:16:36 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.8ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 72ms (Views: 17.5ms | ActiveRecord: 0.4ms)
