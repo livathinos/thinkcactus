@@ -14946,3 +14946,407 @@ Started GET "/" for 127.0.0.1 at 2011-04-24 10:16:36 +0300
 Rendered posts/_post.html.erb (8.8ms)
 Rendered posts/index.html.erb within layouts/application (11.5ms)
 Completed 200 OK in 72ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+  [1m[36mSQL (15.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[35mSQL (213.3ms)[0m  ALTER TABLE `posts` ADD `tag_one` varchar(255)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[35mSQL (1.7ms)[0m  ALTER TABLE `posts` ADD `tag_one` varchar(255)
+Mysql::Error: Duplicate column name 'tag_one': ALTER TABLE `posts` ADD `tag_one` varchar(255)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to AddAuthorUrlToComments (20101125153059)
+  [1m[35mSQL (57.8ms)[0m  ALTER TABLE `comments` DROP `author_url`
+  [1m[36mAREL (5.2ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20101125153059'[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.3ms)[0m  [1mdescribe `admin_users`[0m
+  [1m[35mSQL (0.9ms)[0m  SHOW KEYS FROM `admin_users`
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `comments`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW KEYS FROM `comments`
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `posts`[0m
+  [1m[35mSQL (1.4ms)[0m  SHOW KEYS FROM `posts`
+  [1m[36mSQL (1.5ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (2.4ms)[0m  [1mdescribe `works`[0m
+  [1m[35mSQL (0.9ms)[0m  SHOW KEYS FROM `works`
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+  [1m[35mSQL (70.1ms)[0m  ALTER TABLE `comments` ADD `author_url` varchar(255)
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101125153059')[0m
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[35mSQL (0.3ms)[0m  ALTER TABLE `posts` ADD `tag_one` varchar(255)
+Mysql::Error: Duplicate column name 'tag_one': ALTER TABLE `posts` ADD `tag_one` varchar(255)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[35mSQL (122.1ms)[0m  ALTER TABLE `posts` ADD `tag_one` varchar(255)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[35mSQL (262.9ms)[0m  ALTER TABLE `posts` ADD `tag_one` varchar(255)
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[35mSQL (0.5ms)[0m  ALTER TABLE `posts` ADD `tag_one` varchar(255)
+Mysql::Error: Duplicate column name 'tag_one': ALTER TABLE `posts` ADD `tag_one` varchar(255)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePosts (20101114134523)
+Migrating to CreateUsers (20101114134559)
+Migrating to CreateWorks (20101114153828)
+Migrating to CreateComments (20101114164339)
+Migrating to AddForeignToComments (20101114210504)
+Migrating to CreateAdminUsers (20101125121349)
+Migrating to AddAuthorUrlToComments (20101125153059)
+Migrating to AddTagOneToPosts (20110424072331)
+  [1m[35mSQL (110.2ms)[0m  ALTER TABLE `posts` ADD `tag_one` varchar(255)
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110424072331')[0m
+Migrating to AddTagTwoToPosts (20110424072349)
+  [1m[35mSQL (138.6ms)[0m  ALTER TABLE `posts` ADD `tag_two` varchar(255)
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110424072349')[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.5ms)[0m  [1mdescribe `admin_users`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `admin_users`
+  [1m[36mSQL (1.5ms)[0m  [1mdescribe `comments`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `comments`
+  [1m[36mSQL (6.5ms)[0m  [1mdescribe `posts`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `posts`
+  [1m[36mSQL (1.9ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `works`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW KEYS FROM `works`
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:39:12 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.3ms)
+Rendered posts/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 35ms (Views: 21.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:39:28 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (10.1ms)
+Rendered posts/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 32ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:40:10 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.7ms)
+Rendered posts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 31ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:40:23 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (51.4ms)
+Rendered posts/index.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 73ms (Views: 60.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:40:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.1ms)
+Rendered posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 32ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:41:14 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.7ms)
+Rendered posts/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 31ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:43:42 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.1ms)
+Rendered posts/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 32ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:44:06 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.9ms)
+Rendered posts/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 31ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-04-24 10:44:39 +0300
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2011-04-24 10:44:39 +0300
+  Processing by Admin::DashboardController#show as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/dashboard/_sidebar.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_applications.html.erb (5.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/dashboard/_resources.html.erb (0.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (3.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/dashboard/show.html.erb within layouts/admin/base (39.8ms)
+Completed 200 OK in 162ms (Views: 49.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2011-04-24 10:44:41 +0300
+  Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` LIMIT 15 OFFSET 0[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (46.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_index.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.5ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `posts`
+Rendered vendor/plugins/typus/app/views/admin/helpers/search/_search.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/table/_table.html.erb (4.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (1.3ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/index.html.erb within layouts/admin/base (90.9ms)
+Completed 200 OK in 137ms (Views: 102.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/posts/edit/2" for 127.0.0.1 at 2011-04-24 10:44:49 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (4.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (2.2ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (26.2ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (100.5ms)
+Completed 200 OK in 119ms (Views: 111.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/admin/posts/update/2" for 127.0.0.1 at 2011-04-24 10:44:59 +0300
+  Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "post"=>{"title"=>"Newer Post", "body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n", "author_id"=>"", "published_on(1i)"=>"2011", "published_on(2i)"=>"4", "published_on(3i)"=>"23"}, "commit"=>"Save Post", "id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `posts` SET `body` = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.\r\n\r\n\r\nSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id.\r\n\r\n\r\nNunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia. Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.\r\n', `updated_at` = '2011-04-24 07:44:59' WHERE `posts`.`id` = 2
+  [1m[36mSQL (16.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/posts/edit/2
+Completed 302 Found in 26ms
+
+
+Started GET "/admin/posts/edit/2" for 127.0.0.1 at 2011-04-24 10:44:59 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (21.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (54.0ms)
+Completed 200 OK in 114ms (Views: 108.9ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:45:01 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.3ms)
+Rendered posts/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 32ms (Views: 19.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/posts/edit/2" for 127.0.0.1 at 2011-04-24 10:46:25 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (66.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (97.2ms)
+Completed 200 OK in 114ms (Views: 108.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/admin/posts/update/2" for 127.0.0.1 at 2011-04-24 10:46:48 +0300
+  Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "post"=>{"title"=>"Newer Post", "body"=>"<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.</p>\r\n<p>\r\n\tSed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id. Nunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia.</p>\r\n<p>\r\n\tQuisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.</p>\r\n", "author_id"=>"", "published_on(1i)"=>"2011", "published_on(2i)"=>"4", "published_on(3i)"=>"23"}, "commit"=>"Save Post", "id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.6ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `posts` SET `body` = '<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.</p>\r\n<p>\r\n	Sed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id. Nunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia.</p>\r\n<p>\r\n	Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.</p>\r\n', `updated_at` = '2011-04-24 07:46:48' WHERE `posts`.`id` = 2
+  [1m[36mSQL (27.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/posts/edit/2
+Completed 302 Found in 37ms
+
+
+Started GET "/admin/posts/edit/2" for 127.0.0.1 at 2011-04-24 10:46:48 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.9ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (21.5ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.4ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (53.1ms)
+Completed 200 OK in 70ms (Views: 63.5ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:46:52 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (88.4ms)
+Rendered posts/index.html.erb within layouts/application (91.5ms)
+Completed 200 OK in 223ms (Views: 102.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/admin/posts/update/2" for 127.0.0.1 at 2011-04-24 10:47:20 +0300
+  Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "post"=>{"title"=>"Newer Post", "body"=>"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.</p>\r\n<p>Sed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id. Nunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia.</p>\r\n<p>Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.</p>\r\n", "author_id"=>"", "published_on(1i)"=>"2011", "published_on(2i)"=>"4", "published_on(3i)"=>"23"}, "commit"=>"Save Post", "id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `posts` SET `body` = '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat dictum sem, vitae posuere quam commodo non. Proin tempor elit diam. Proin mi magna, eleifend bibendum sollicitudin eu, aliquet vitae ligula. Vestibulum mattis metus sit amet massa consectetur non blandit neque imperdiet. Curabitur sed arcu nec lacus sodales luctus eu a orci. Suspendisse id quam orci. Nam vitae ante sit amet massa posuere consequat. In imperdiet fringilla pulvinar. Nunc porta malesuada dapibus. Ut molestie lacinia orci, nec pulvinar nibh sollicitudin sit amet. Praesent vel libero sit amet urna vehicula molestie et et velit. Sed quis nunc quam, a mattis augue. Vestibulum vitae erat quis lorem tristique dapibus. Etiam viverra purus ac nunc eleifend feugiat sed vel arcu.</p>\r\n<p>Sed elit felis, lacinia et aliquam sed, venenatis nec lectus. Vestibulum porta erat non arcu eleifend egestas. Sed mollis justo et arcu sagittis vitae sodales lacus tincidunt. Vivamus quis diam sit amet risus pellentesque tempus aliquet non tortor. Duis mollis bibendum sodales. Fusce id sapien eu magna pharetra mollis ac ut neque. Cras risus justo, dictum pulvinar convallis eget, ullamcorper a est. Suspendisse nec ullamcorper velit. Sed hendrerit ultrices odio et tincidunt. Aenean cursus fringilla dui vel porta. Donec quis lectus vitae elit facilisis luctus. Vestibulum non dui purus. Mauris commodo lorem non nibh varius condimentum. Vivamus sollicitudin tortor dictum justo hendrerit faucibus. Maecenas nec orci nec mauris ultricies accumsan. Aliquam dictum mi vel ipsum dictum auctor suscipit metus elementum. Proin quis vehicula odio. Integer ultrices purus in est tempor eu eleifend mauris pretium. Cras venenatis auctor neque, eu commodo urna mattis id. Nunc urna urna, convallis at sagittis ut, pretium ac nisi. Etiam luctus venenatis tellus, interdum lacinia urna ullamcorper ut. Mauris pretium mauris ac ipsum accumsan lacinia.</p>\r\n<p>Quisque nec mauris nunc. Etiam felis erat, congue sit amet ultricies vel, dignissim at lorem. Fusce rutrum interdum nulla, eu cursus risus malesuada sed. Etiam condimentum magna id nunc condimentum sed viverra risus consectetur. Sed sollicitudin risus quis diam aliquam sollicitudin. Fusce sollicitudin nunc felis. Mauris ullamcorper lacinia leo, quis lobortis libero volutpat at. Maecenas aliquet leo a leo tincidunt vehicula. Proin id leo porttitor magna lobortis tincidunt ut at magna. Donec dictum molestie risus eget interdum. Aliquam in arcu erat.</p>\r\n', `updated_at` = '2011-04-24 07:47:20' WHERE `posts`.`id` = 2[0m
+  [1m[35mSQL (31.3ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/admin/posts/edit/2
+Completed 302 Found in 40ms
+
+
+Started GET "/admin/posts/edit/2" for 127.0.0.1 at 2011-04-24 10:47:20 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (21.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.7ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (53.1ms)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 10:47:23 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (10.6ms)
+Rendered posts/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 77ms (Views: 20.0ms | ActiveRecord: 0.5ms)

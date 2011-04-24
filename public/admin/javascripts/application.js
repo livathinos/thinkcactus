@@ -1,6 +1,8 @@
-// Place your application-specific JavaScript functions and classes for
-// the admin panel here.
+document.write("<script type='text/javascript' src='/vendor/ckeditor/ckeditor.js'></script>"); 
 
 $(function() {
-  $("#quicksearch").searchField();
+  if ($('textarea').length > 0) {
+    var data = $('textarea');
+    $.each(data, function(i) { CKEDITOR.replace(data[i].id); });
+  }
 });
