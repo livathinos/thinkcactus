@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	//Make sure the currently active work divs get some class
 	//to show that they're active
-	$('.tsItem').addClass('activeItem');
+	$('.excItem').addClass('activeItem');
 	$('.issuesItem').addClass('activeItem');
 	
 	//Set the item position pointer to zero
