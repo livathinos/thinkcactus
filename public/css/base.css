@@ -17,6 +17,20 @@
 	font-style: normal;
 }
 
+.rotate {
+  -webkit-transform: rotate(-4deg);	
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-10deg);
+}
+
+.shadow {
+  -moz-box-shadow: 2px 2px 5px #888;
+  -webkit-box-shadow: 2px 2px 5px #888;
+  box-shadow: 2px 2px 5px #888;  
+}
+
 .normal-type, .normal-type-small {
 	font-family: "Helvetica Neue", Helvetica, Tahoma;
 	font-size: 13px;
@@ -707,4 +721,27 @@ span.firstBtn a { background-position: -25px 4px;}
 	text-align: center;
 	font-size: 10px;
 	color: #999999;
+}
+
+.blue-tag, .green-tag {
+  padding: 5px 5px 5px 40px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100px;
+  position: relative;
+  left: -30px;
+  margin-bottom: 5px;
+}
+
+.blue-tag {
+  background: #5095F4;
+  border: 1px solid #4188EA;
+  text-shadow: 0px -1px 0px #3238E5;
+}
+.green-tag {
+  background: #6BE031;
+  border: 1px solid #5BD31F;
+  text-shadow: 0px -1px 0px #369108;
+  width: 200px;
 }
