@@ -1,8 +1,12 @@
 <div class="post">
-	<p class="korny-type"><%= post.title %></p>
-	<img class="bubble" src="img/thought_bubble.png" alt="" />
-	<p class="date-type embed"><%= post.created_at.strftime(" %b %d %Y") %></p>
-	<%= simple_format(post.body) %>
-	
-	<%= link_to "Full post & comments", post, :class => "wholelink" %>
+  <div class="sep">
+    <img class="bubble" src="img/thought_bubble.png" alt="" />
+    <p class="date-type"><%= post.created_at.strftime(" %b %d %Y") %></p>
+  </div>
+  <div class="nonsep">
+	  <h2><%= post.title %></h2>
+	  <%= simple_format(post.body) %>
+	  
+	  <%= link_to "Full post & comments", post, :class => "wholelink" %>
+	</div>
 </div>

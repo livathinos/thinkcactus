@@ -18,23 +18,22 @@
 }
 
 .normal-type, .normal-type-small {
-	font-family: Helvetica, Tahoma;
+	font-family: "Helvetica Neue", Helvetica, Tahoma;
 	font-size: 12px;
 	line-height: 20px;
 	color: #333333;
 	margin: 10px 0;
-	text-shadow: 0px 1px 0px rgba(255,255,255,0.9);
 }
 
 .normal-type-small { font-size: 11px; }
 
-.code-type { font-family: Courier; margin: 15px 0; display: block; }
+.code-type { font-family: "Monaco", Courier; margin: 15px 0; display: block; }
 
 .korny-type, .korny-type-small {
-	font-family: GentiumPlusRegular,Georgia, 'Aller Light';
+	font-family: GentiumPlusRegular,Georgia;
 	font-size: 30px;
-	line-height: 40px;
 	font-weight: normal;
+	line-height: 24px;
 	color: #262626;
 	text-shadow: 0px 1px 0px rgba(255,255,255,0.9);
 }
@@ -47,12 +46,9 @@
 
 .moremargin { margin-top: 30px; }
 
-.embed { background: url(../img/embedded_line.png) repeat-x;}
-
-.date-type { 
-	font-family: GentiumPlusRegular,Helvetica;
+.date-type {
 	text-transform: uppercase; 
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 12px;  
 	color: #999999; 
 }
@@ -126,10 +122,25 @@ a:hover { text-decoration: none; }
 -------------------------*/
 body {
 	font-size: 13px;
-	font-family: CalibriRegular,Helvetica, Verdana;
+	font-family: "Helvetica Neue",Helvetica, Verdana;
 	background-color: #f2f7f8;
+	color: #444;
 }
-html {}
+
+html { 
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 30px;
+}
 
 /*-------------------------
  *	[TOP] HEADER
@@ -141,7 +152,7 @@ html {}
 	z-index: 3;
 }
 #header-inner {
-	width:1020px;
+	width: 960px;
 	height: 106px;
 	margin: 0 auto;
 	padding: 0;
@@ -223,17 +234,16 @@ html {}
  *	[CONTENT] MAIN CONTENT
 -------------------------*/
 #wrapper {
-	width: 1020px;
+	width: 960px;
 	min-height: 750px;
 	margin: 0 auto;
 	padding: 0;
 	z-index: 0;
 	position: relative;
-	top: -20px;
 }
 
 #content {
-	padding: 0;
+	padding: 35px 0 0 0;
 	margin: 0;
 	position: relative;
 	z-index: 1;
@@ -248,10 +258,8 @@ html {}
 	float: left;
 	margin-bottom: 20px;
 	line-height: 21px;
-	font-size: 13px;
 	font-weight: normal;
 	color: #444;
-	font-family: Helvetica;
 }
 
 .post .wholelink {
@@ -272,15 +280,16 @@ html {}
 	-moz-box-shadow: 1px 1px 2px #CCCCCC;
 }
 
-.post img.bubble { position: absolute; top: 15px; left: -35px; }
+.post .sep { float: left; padding-top: 5px;}
+
+.post .nonsep { padding-left: 110px; }
 
 #upper-container {
-	width: 700px;
-	padding: 20px;
+	width: 680px;
+	padding: 0 10px 20px 0;
 	margin: 0 20px 20px 20px;
 	position: relative;
 	float: left;
-	top: 25px;
 }
 
 #comments { float: left; width: 500px; }
@@ -363,6 +372,7 @@ html {}
 .next {}
 
 .ditysItem,
+.tsItem,
 .khomeItem,
 .shopItem,
 .carnivalItem,
@@ -375,11 +385,10 @@ html {}
 #sidebar {
 	float: left;
 	width: 215px;
-	padding: 20px 5px 5px 5px;
+	padding: 0 5px 5px 5px;
 	margin: 0;
 	color: #666666;
 	position: relative;
-	top: 25px;
 }
 
 ul.side-projects {}
@@ -394,16 +403,20 @@ ul.social li { display: inline; padding: 2px; }
 	CENTER SECTION STYLE
 -------------------------*/
 #left-floater {
-	float: left;
-	width: 780px;
-}
-#center-container {
-	margin: 0;
-	padding: 10px 10px 10px 20px;
-	width: 700px;
-	z-index: 10;
-	float: left;
+	width: 680px;
+	padding: 0 10px 20px 0;
+	margin: 0 20px 20px 20px;
 	position: relative;
+	float: left;
+}
+
+#center-container {
+	z-index: 10;
+	width: 680px;
+	padding: 0;
+	margin: 0 20px 20px 0;
+	position: relative;
+	float: left;
 }
 
 #center-container h2 { margin-left: 20px; }
@@ -471,7 +484,7 @@ ul.social li { display: inline; padding: 2px; }
 	position: relative;
 	top: 0px;
 	left: 300px;
-	width: 400px;
+	width: 375px;
 	height: 125px;
 	line-height: 18px;
 }
@@ -488,7 +501,7 @@ ul.social li { display: inline; padding: 2px; }
 	float: left;
 	margin: 10px 0 0 10px;
 	line-height: 18px;
-	width: 210px;
+	width: 195px;
 }
 #center-container .technos-ext li {
 	padding: 0 0 0 25px;
@@ -576,7 +589,7 @@ span.firstBtn a { background-position: -25px 4px;}
 -------------------------*/
 #footer {
 	height: 66px;
-	background: url(../img/footer_bg.png) repeat-x;
+	/*background: url(../img/footer_bg.png) repeat-x;*/
 	position: relative;
 	z-index: 3;
 	margin: 0;
