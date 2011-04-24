@@ -4,5 +4,6 @@ syntax: glob
 .bundle
 db/*.sqlite3
 vendor/cache/*.*
+log/*
 log/*.log
 tmp/**/*

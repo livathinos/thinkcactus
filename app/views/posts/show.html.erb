@@ -1,16 +1,21 @@
 <div id="upper-container">
 	
 	<div class="post">
-		<p class="korny-type"><%= @post.title %></p>
-		<img class="bubble" src="/img/thought_bubble.png" alt="" />
-		<p class="date-type"><%= @post.created_at.strftime(" %b %d %Y") %></p>
-		<%= simple_format(@post.body) %>
-
-		<% if User == @post.author %>
-			<% link_to "edit" %>
-			<% link_to "new" %>
-			<% link_to "destroy", @post, :confirm => "Are you sure you want to destroy this post?", :method => :delete %>
-		<% end %>
+	  <div class="sep">
+      <img class="bubble" src="../img/thought_bubble.png" alt="" />
+      <p class="date-type"><%= @post.created_at.strftime(" %b %d %Y") %></p>
+      <a href='http://twitter.com/?status="<%= @post.title %>" by @spyrosl: <%= link_to "", @post %>'>Tweet it</a>
+    </div>
+    <div class="nonsep">
+	    <h2><%= @post.title %></h2>
+      <ul class="meta-tags">
+        <li>#HTML5,</li>
+        <li>#Tag two</li>
+        <li>Category: General</li>
+        <li><%= link_to "Full post & comments", @post %></li>
+      </ul>
+	    <%= simple_format(@post.body) %>
+	  </div>
 	</div><!--end of .post-->
 	
 	<div id="comments">

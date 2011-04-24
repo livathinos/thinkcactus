@@ -316,7 +316,7 @@ ul.meta-tags {list-style: disc;}
 	float: left;
 }
 
-#comments { float: left; width: 500px; }
+#comments { float: left; width: 500px; padding-left: 110px;}
 
 #comments li { display: block; }
 
@@ -326,9 +326,10 @@ ul.meta-tags {list-style: disc;}
 
 #new_comment .field label { float: left; width: 110px; padding: 10px 10px 10px 0; clear: left;}
 
-#new_comment .field input { float: left; margin: 10px; border: none; height: 20px; width: 270px;}
+#new_comment .field textarea { border: 1px solid #ccc; margin-top: 20px;}
+#new_comment .field input { float: left; margin: 10px; border: 1px solid #ccc; height: 20px; width: 270px;}
 
-#new_comment .actions input { float: left; margin: 10px 10px 10px 0; border: 1px solid #CCCCCC; height: 20px; width: 200px;}
+#new_comment .actions input { float: left; margin: 10px 10px 10px 0; height: 20px; width: 200px;}
 #comment_author_name,
 #comment_author_url {}
 
