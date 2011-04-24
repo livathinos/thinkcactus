@@ -25,6 +25,11 @@
 	margin: 10px 0;
 }
 
+.rounded-corners {
+  -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    border-radius: 5px; /* CSS3 */
+}
 .normal-type-small { font-size: 11px; }
 
 .code-type { font-family: "Monaco", Courier; margin: 15px 0; display: block; }
@@ -44,18 +49,21 @@
 	font-weight: bold;
 }
 
-.moremargin { margin-top: 30px; }
+.moremargin { margin-top: 40px; }
 
 .date-type {
 	text-transform: uppercase; 
 	font-weight: normal;
-	font-size: 12px;  
-	color: #999999; 
+	font-size: 10px;  
+	line-height: 10px;
+	color: #999999;
+	padding: 0;
+	margin: 0; 
 }
 
+a.simple { text-decoration: none; color: #262626;}
 .top-space { margin-top: 20px; display: block;}
-.bottom-space { margin-bottom: 20px; display: block; }
-#upper-container p { padding-top: 5px; }
+.bottom-space { margin-bottom: 10px; display: block; }
 
 /*-------------------------
  *	[SITEWIDE] GLOBAL RESET
@@ -256,7 +264,7 @@ h2 {
 .post { 
 	position:relative; 
 	float: left;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 	line-height: 21px;
 	font-weight: normal;
 	color: #444;
@@ -276,11 +284,27 @@ h2 {
 	margin: 10px 0 10px 0;
 }
 
+.post h2 {
+  padding-bottom: 5px;
+}
+
+ul.meta-tags {list-style: disc;}
+.post .meta-tags { margin-bottom: 20px; }
+.post .meta-tags li:first-child { list-style-type: none; }
+.post .meta-tags li {
+  display: inline;
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
 .post .wholelink:hover {
 	-moz-box-shadow: 1px 1px 2px #CCCCCC;
 }
 
 .post .sep { float: left; padding-top: 5px;}
+
+.post .sep a { display: block; margin-top: 25px;}
 
 .post .nonsep { padding-left: 110px; }
 
@@ -394,6 +418,14 @@ h2 {
 ul.side-projects {}
 
 ul.side-projects li { padding-left: 20px; background: url(../img/footer_bullet.png) center left no-repeat; }
+
+ul.social-code {}
+
+ul.social-code li { padding: 5px 0 10px 30px; }
+
+ul.social-code li.bitbucket { background: url(../img/bitbucket_icon.png) center left no-repeat; }
+
+ul.social-code li.github { background: url(../img/github_icon.png) center left no-repeat; }
 
 ul.social {}
 

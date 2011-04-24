@@ -13406,3 +13406,1423 @@ Started GET "/" for 127.0.0.1 at 2011-04-24 08:23:53 +0300
 Rendered posts/_post.html.erb (49.7ms)
 Rendered posts/index.html.erb within layouts/application (52.2ms)
 Completed 200 OK in 70ms (Views: 58.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:26:56 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (10.4ms)
+Rendered posts/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 33ms (Views: 19.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:27:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.4ms)
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 30ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:27:28 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.8ms)
+Rendered posts/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 31ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:27:35 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:27:42 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:27:50 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (49.3ms)
+Rendered posts/index.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 70ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:27:59 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.8ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:28:21 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.5ms)
+Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:29:09 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 69ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:29:30 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.5ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:29:37 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.8ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:29:40 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 29ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:29:53 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (47.8ms)
+Rendered posts/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 68ms (Views: 56.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:29:57 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:30:18 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:32:13 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.2ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 69ms (Views: 16.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:32:45 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:32:56 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.8ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:33:03 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:33:10 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 70ms (Views: 57.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:33:16 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:33:37 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.2ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:33:50 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 67ms (Views: 16.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:34:00 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:34:04 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:34:56 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.7ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 31ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:35:10 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:35:22 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:36:19 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:36:27 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 69ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:36:31 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:36:36 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:36:39 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 69ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:36:53 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:04 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.5ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:08 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:12 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 29ms (Views: 16.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:18 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 28ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:21 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (48.2ms)
+Rendered posts/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 70ms (Views: 57.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:27 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.2ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:37:49 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 30ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:38:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.4ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 68ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:38:32 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 29ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:39:11 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.5ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:39:18 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 31ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:39:36 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (47.3ms)
+Rendered posts/index.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 68ms (Views: 55.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:39:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (32.2ms)
+Rendered posts/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 53ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:39:56 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 34ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:40:11 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (49.3ms)
+Rendered posts/index.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 70ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:40:20 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 28ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:40:28 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.2ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:40:39 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 69ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:40:51 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:40:51 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 30ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:41:08 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (36.0ms)
+Rendered posts/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 97ms (Views: 44.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:41:13 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 28ms (Views: 16.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:41:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 30ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:41:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:41:59 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.7ms)
+Rendered posts/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 28ms (Views: 16.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:42:02 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.1ms)
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 31ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:42:05 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:42:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (48.6ms)
+Rendered posts/index.html.erb within layouts/application (51.5ms)
+Completed 200 OK in 70ms (Views: 57.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:43:07 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.2ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 30ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:44:05 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:44:13 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 70ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:44:27 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.1ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:46:44 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.7ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 29ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:47:19 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 30ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:47:29 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.0ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:47:58 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.1ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 31ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:48:12 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.0ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:48:30 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (50.6ms)
+Rendered posts/index.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 72ms (Views: 59.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:52:40 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 30ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:53:22 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.7ms)
+Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:53:29 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 69ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:53:33 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2011-04-24 08:55:10 +0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSQL (84.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE (`comments`.post_id = 2)[0m
+Rendered comments/_comment.html.erb (0.0ms)
+Rendered comments/_form.html.erb (14.4ms)
+Rendered posts/show.html.erb within layouts/application (121.1ms)
+Completed 200 OK in 226ms (Views: 126.9ms | ActiveRecord: 85.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:55:15 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 29ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:56:45 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (17.5ms)
+Rendered posts/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 55ms (Views: 40.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:57:06 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:57:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:57:29 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:57:33 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.7ms)
+Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:57:42 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:58:35 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:58:40 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 08:58:44 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:00:04 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 30ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:00:09 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:00:12 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:00:21 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (7.8ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:00:28 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:00:58 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:01:39 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 70ms (Views: 57.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:01:50 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:02:09 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 30ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:02:36 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (50.0ms)
+Rendered posts/index.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 71ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:03:01 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.7ms)
+Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:03:20 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.3ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:03:25 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (50.1ms)
+Rendered posts/index.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 71ms (Views: 58.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:04:42 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.2ms)
+Rendered posts/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 53ms (Views: 21.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:05:34 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.1ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:05:38 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.1ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 69ms (Views: 16.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:05:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.0ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:06:09 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.2ms)
+Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:06:43 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (7.9ms)
+Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 69ms (Views: 16.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:08:39 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.1ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:08:47 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:09:06 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 70ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:09:14 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 31ms (Views: 18.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:09:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 30ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:09:47 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 70ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:09:53 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.5ms)
+Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:09:59 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.8ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:08 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 30ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:11 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.8ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 29ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:19 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:21 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.7ms)
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:29 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 30ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:38 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.0ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 31ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:46 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.8ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 70ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:49 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 30ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:10:52 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.1ms)
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:12:33 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 31ms (Views: 18.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:12:43 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:14:11 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 31ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:15:49 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.5ms)
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:16:00 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (10.5ms)
+Rendered posts/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 32ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:16:30 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.6ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 30ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:16:33 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:16:48 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.4ms)
+Rendered posts/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 33ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:17:10 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:21:02 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.0ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 31ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:22:07 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (51.6ms)
+Rendered posts/index.html.erb within layouts/application (54.3ms)
+Completed 200 OK in 73ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:22:40 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (12.4ms)
+Rendered posts/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 34ms (Views: 20.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:22:47 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.9ms)
+Rendered posts/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 31ms (Views: 19.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:22:53 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (53.8ms)
+Rendered posts/index.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 78ms (Views: 62.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:23:12 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.5ms)
+Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 31ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:23:21 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 30ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:23:27 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (50.1ms)
+Rendered posts/index.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 71ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:25:55 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.1ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bitbucket_icon.png" for 127.0.0.1 at 2011-04-24 09:25:55 +0300
+
+ActionController::RoutingError (No route matches "/bitbucket_icon.png"):
+  
+
+Rendered /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136@rails3.0.5/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:26:15 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.6ms)
+Rendered posts/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 32ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:26:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.7ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 71ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:27:11 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.9ms)
+Rendered posts/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 31ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:27:43 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.6ms)
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:29:20 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.0ms)
+Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 72ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:29:34 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 31ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:33:07 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.4ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 31ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:33:13 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.9ms)
+Rendered posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 73ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:33:33 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (10.6ms)
+Rendered posts/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 33ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:33:56 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.4ms)
+Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:35:31 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.0ms)
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 32ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:35:35 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 32ms (Views: 19.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:36:12 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (10.3ms)
+Rendered posts/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 32ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:36:16 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.6ms)
+Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 33ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:36:23 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.8ms)
+Rendered posts/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 71ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:36:56 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.3ms)
+Rendered posts/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 31ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:38:04 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.4ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 33ms (Views: 18.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:38:44 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.8ms)
+Rendered posts/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 31ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:39:04 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.7ms)
+Rendered posts/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 31ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:39:45 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.5ms)
+Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 31ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:39:56 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (51.9ms)
+Rendered posts/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 74ms (Views: 60.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:40:02 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.8ms)
+Rendered posts/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 32ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:40:11 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 32ms (Views: 19.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:40:19 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (52.8ms)
+Rendered posts/index.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 74ms (Views: 61.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:40:24 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.6ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 31ms (Views: 18.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:40:37 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (10.8ms)
+Rendered posts/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 33ms (Views: 20.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:40:50 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 73ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:41:02 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.9ms)
+Rendered posts/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 32ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:46:33 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (10.0ms)
+Rendered posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 31ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:46:47 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.7ms)
+Rendered posts/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 73ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:47:41 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 31ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:47:47 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (9.3ms)
+Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:47:58 +0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_at DESC
+Rendered posts/_post.html.erb (9.2ms)
+Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 72ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 09:48:38 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (8.9ms)
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.4ms)
