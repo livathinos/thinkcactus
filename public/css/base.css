@@ -20,9 +20,9 @@
 .normal-type, .normal-type-small {
 	font-family: "Helvetica Neue", Helvetica, Tahoma;
 	font-size: 12px;
-	line-height: 20px;
-	color: #333333;
-	margin: 10px 0;
+	line-height: 18px;
+	color: #262626;
+	margin: 10px 0 0 0;
 }
 
 .rounded-corners {
@@ -168,8 +168,8 @@ h2 {
 	z-index: 4;
 }
 #logo {
-	height: 107px;
-	width: 463px;
+	height: 109px;
+	width: 353px;
 	margin: 0;
 	padding: 0;
 	position: relative;
