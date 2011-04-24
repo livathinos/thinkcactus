@@ -16219,3 +16219,71 @@ Migrating to AddCategoryToPosts (20110424082808)
   [1m[35mSQL (1.6ms)[0m  SHOW KEYS FROM `users`
   [1m[36mSQL (1.6ms)[0m  [1mdescribe `works`[0m
   [1m[35mSQL (0.5ms)[0m  SHOW KEYS FROM `works`
+
+
+Started GET "/admin/posts/edit/3" for 127.0.0.1 at 2011-04-24 11:30:41 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (43.9ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.4ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (1.1ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (31.3ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (3.1ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (122.1ms)
+Completed 200 OK in 207ms (Views: 135.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/posts/update/3" for 127.0.0.1 at 2011-04-24 11:31:18 +0300
+  Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+M2C6usNA3dSBBhmgA/87mhsrurft4bMs40sRhnw/0=", "post"=>{"title"=>"Newest post of all", "tag_one"=>"HTML5", "tag_two"=>"Web Dev", "category"=>"General", "body"=>"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed nulla pretium tortor dignissim porta ut nec turpis. Proin iaculis tempor lorem, at vestibulum mi fringilla vitae. Sed id lorem lacus, at sagittis ligula. Nulla facilisi. Integer fringilla magna ornare ante varius congue. Mauris vel pharetra sapien. Integer lacinia purus quis dolor tincidunt vitae tristique magna cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus quis mauris sodales metus pretium aliquet varius quis odio. Maecenas et ante massa, a vulputate magna. Maecenas quis interdum diam.</p>\r\n<p>Praesent consequat sodales pharetra. Nunc feugiat faucibus aliquet. Nam ut nulla eu purus imperdiet pretium at vitae nibh. Praesent volutpat arcu vel neque tincidunt hendrerit porta sem fringilla. Suspendisse volutpat risus eget felis pharetra sodales. Ut nisi ligula, cursus ac sagittis a, fringilla a diam. Etiam ut elit mi, quis aliquet erat. Praesent porttitor porttitor erat, vel interdum mauris imperdiet id. In tincidunt lobortis ligula nec aliquet. Sed convallis venenatis libero, ultricies tempor quam ullamcorper ac. Praesent aliquet velit vel elit commodo a lobortis est pellentesque. Vestibulum nec turpis sed massa ornare vehicula. Morbi dolor mi, varius non elementum sit amet, ultrices ut mauris.</p>\r\n<p>Maecenas non eros quam, non fermentum dui. Integer mattis ullamcorper laoreet. Quisque nec ante dolor, a blandit ipsum. Curabitur congue rutrum nibh. Sed euismod pretium porttitor. Suspendisse at est ac augue consequat placerat sit amet in ipsum. Quisque euismod fringilla tortor, sit amet dapibus ipsum condimentum in. Nam vitae magna dolor, vitae facilisis eros. Duis sit amet eros libero, ut viverra odio. Fusce molestie justo et lorem cursus pulvinar nec eget nisl. Morbi vitae nisl a orci hendrerit imperdiet at in augue. Donec commodo gravida lorem, non ultrices risus auctor vel. Vivamus dapibus, enim eget sagittis malesuada, justo mi lobortis mauris, eu convallis mauris lectus nec turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper porttitor commodo.</p>\r\n", "published_on(1i)"=>"2011", "published_on(2i)"=>"4", "published_on(3i)"=>"24", "author_id"=>""}, "commit"=>"Save Post", "id"=>"3"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `posts` SET `category` = 'General', `updated_at` = '2011-04-24 08:31:18' WHERE `posts`.`id` = 3
+  [1m[36mSQL (14.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/posts/edit/3
+Completed 302 Found in 40ms
+
+
+Started GET "/admin/posts/edit/3" for 127.0.0.1 at 2011-04-24 11:31:18 +0300
+  Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+Rendered vendor/plugins/typus/app/views/admin/helpers/sidebar/_sidebar.html.erb (3.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_flash_message.html.erb (0.5ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_edit.html.erb (0.3ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_string.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_text.html.erb (0.9ms)
+Rendered vendor/plugins/typus/app/views/admin/templates/_date.html.erb (2.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+Rendered vendor/plugins/typus/app/views/admin/templates/_belongs_to.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/_form.html.erb (30.9ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_header.html.erb (1.0ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_apps.html.erb (2.6ms)
+Rendered vendor/plugins/typus/app/views/admin/helpers/_login_info.html.erb (0.8ms)
+Rendered vendor/plugins/typus/app/views/admin/resources/edit.html.erb within layouts/admin/base (66.4ms)
+Completed 200 OK in 83ms (Views: 77.2ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-24 11:31:20 +0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY created_at DESC[0m
+Rendered posts/_post.html.erb (84.9ms)
+Rendered posts/index.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 108ms (Views: 94.9ms | ActiveRecord: 0.5ms)

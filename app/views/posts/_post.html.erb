@@ -9,7 +9,7 @@
     <ul class="meta-tags">
       <li>#<%= post.tag_one %>,</li>
       <li>#<%= post.tag_two %> ‹</li>
-      <li>Category: General ‹</li>
+      <li>Category: <%= post.category %> ‹</li>
       <li><%= link_to "Full post & comments", post %> ‹</li>
     </ul>
 	  <%= simple_format(post.body) %>
