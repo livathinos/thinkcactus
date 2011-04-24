@@ -7,10 +7,10 @@
   <div class="nonsep">
 	  <h2><%= post.title %></h2>
     <ul class="meta-tags">
-      <li>#HTML5,</li>
-      <li>#Tag two</li>
-      <li>Category: General</li>
-      <li><%= link_to "Full post & comments", post %></li>
+      <li>#<%= post.tag_one %>,</li>
+      <li>#<%= post.tag_two %> ‹</li>
+      <li>Category: General ‹</li>
+      <li><%= link_to "Full post & comments", post %> ‹</li>
     </ul>
 	  <%= simple_format(post.body) %>
 	</div>

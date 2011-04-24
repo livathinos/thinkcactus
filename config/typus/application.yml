@@ -15,7 +15,7 @@ Comment:
 Post:
   fields:
     default: title, author_id, published_on, author
-    form: title, body, author_id, published_on, author
+    form: title, tag_one, tag_two, category, body, published_on, author
   order_by: 
   relationships: author, comments
   filters: 
