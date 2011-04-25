@@ -2,15 +2,15 @@
   <div class="sep">
     <img class="bubble" src="img/thought_bubble.png" alt="" />
     <p class="date-type"><%= post.created_at.strftime(" %b %d %Y") %></p>
-    <a href='http://twitter.com/?status="<%= post.title %>" by @spyrosl: <%= link_to "", post %>'>Tweet it</a>
+    <a class="tweetlink" href='http://twitter.com/?status="<%= post.title %>" by @spyrosl: <%= link_to "", post %>'>Tweet it</a>
   </div>
   <div class="nonsep">
 	  <h2><%= post.title %></h2>
     <ul class="meta-tags">
       <li>#<%= post.tag_one %>,</li>
-      <li>#<%= post.tag_two %> ‹</li>
-      <li>Category: <%= post.category %> ‹</li>
-      <li><%= link_to "Full post & comments", post %> ‹</li>
+      <li>#<%= post.tag_two %> <span>‹</span></li>
+      <li>Category: <%= post.category %> <span>‹</span></li>
+      <li><%= link_to "Full post & comments", post %> <span>‹</span></li>
     </ul>
 	  <%= simple_format(post.body) %>
 	</div>
