@@ -1,10 +1,11 @@
-<li class=" top-space bottom-space">
-	<a href="<% if comment.author_url != nil %>  
-			 	<%= comment.author_url %> 
-			 <% else 
-			    print '#' 
-			 end %>">
-		<%= comment.author_name %>
-	</a><span class="normal-type-small">Posted <%= comment.created_at.strftime("%b %d %Y") %></p>
+<li class="top-space bottom-space">
+	<% if comment.author_url != '' %>
+	  <a href="<%= comment.author_url %>">
+		  <%= comment.author_name %>
+	  </a>
+	<% else %>
+	  <strong><%= comment.author_name %></strong>
+	<% end %>
+	<span class="normal-type-small">Posted <%= comment.created_at.strftime("%b %d %Y") %></p>
 	<p class="normal-type"><%= comment.body %></p>
 </li>
