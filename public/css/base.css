@@ -46,7 +46,7 @@
 }
 .normal-type-small { font-size: 11px; }
 
-.code-type { font-family: "Monaco", Courier; margin: 15px 0; display: block; }
+.code-type { font-family: "Monaco", Courier; background: #eee;}
 
 .korny-type, .korny-type-small {
 	font-family: GentiumPlusRegular,Georgia;
