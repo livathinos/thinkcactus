@@ -20,11 +20,11 @@ gem 'capistrano'
 # To use debugger
 # gem 'ruby-debug'
 
-# Haml for our templates
-gem 'haml'
-
 # Include compass
 gem "compass", ">= 0.10.6"
+
+# Haml for our templates
+gem 'haml'
 
 # Use paul's HTML5boilerplate
 gem 'html5-boilerplate'

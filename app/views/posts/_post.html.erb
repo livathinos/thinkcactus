@@ -15,7 +15,7 @@
     <% if post_counter==0 %>
 	    <%= simple_format(post.body) %>
 	  <% else %>
-	    <%= simple_format(truncate(post.body, :length => 700, :separator => "...")) %>
+	    <%= simple_format(truncate(post.body, :length => 600, :separator => "...")) %>
 	  <% end %>
 	</div>
 </div>

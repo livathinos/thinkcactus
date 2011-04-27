@@ -1,0 +1,7 @@
+- if has_file_preview && file_preview_is_image
+  - content_for :javascripts do
+    %script{:charset => "utf-8", :type => "text/javascript"}
+      $(document).ready(function() {
+      $("#<haml:loud> dom_id(item, &quot;\#{attribute}_preview&quot;) </haml:loud>").fancybox();
+      });
+%a{:href => href, :id => dom_id(item, "#{attribute}_preview"), :title => item.to_label}= content

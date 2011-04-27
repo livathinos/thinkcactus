@@ -1,0 +1,9 @@
+- if resources.any?
+  %table
+    %thead
+      %tr
+        %th{:colspan => "2"}= _t("Resources")
+    - resources.each do |resource|
+      %tr{:class => cycle("even", "odd")}
+        %td= link_to _t(resource.titleize.capitalize), :controller => "/admin/#{resource.underscore}"
+        %td{:align => "right", :style => "vertical-align: bottom;"}

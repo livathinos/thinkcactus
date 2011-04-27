@@ -1,0 +1,122 @@
+- content_for :sidebar do
+  %h2
+    Header (h2)
+    %small
+      Small
+      %a{:href => "#"} link
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis
+    %a{:href => "#"} nostrud exercitation
+    ullamco laboris nisi ut aliquip ex
+    ea commodo consequat.
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore
+  %h3 Header (h3)
+  %ul
+    %li Lorem incididunt
+    %li Lorem incididunt
+    %li Lorem incididunt
+  %h3
+    %a{:href => "#"} Header (h3)
+  %ul
+    %li
+      %a{:href => "#"} Lorem incididunt
+    %li
+      %a{:href => "#"} Lorem incididunt
+    %li Lorem incididunt
+%h2
+  Header (h2)
+  %small
+    Small
+    %a{:href => "#"} link
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%blockquote
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.
+  %p
+    Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%pre
+  :preserve
+    
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+%p
+  %a{:href => "#"} Link to self
+%h3 Header (h3)
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+%h2 Boxes
+.box
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.
+.box
+  %h3 Header (h3)
+  %ul
+    %li Lorem ipsum dolor sit amet
+    %li Duis aute irure dolor in reprehenderit in voluptate
+    %li Laboris nisi ut aliquip ex ea commodo
+.box
+  %h3 Header (h3)
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.
+  %ul
+    %li Lorem ipsum dolor sit amet
+    %li Duis aute irure dolor in reprehenderit in voluptate
+    %li Laboris nisi ut aliquip ex ea commodo
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+%h2 Error Messages (h2)
+#flash.notice
+  %p
+    %strong Hey!
+    Sample ui-state-highlight style.
+#flash.alert
+  %p
+    %strong Alert:
+    Sample ui-state-error style.
+%h2 Filters (h2)
+%h3 Filters with a list inside (h3)
+.filters
+  %ul
+    %li Filter
+    %li Filter
+%h3 Filters with a paragraph inside (h3)
+.filters
+  %p This is a paragraph.
+%h2 Forms (h2)
+%p This is how a form looks like.

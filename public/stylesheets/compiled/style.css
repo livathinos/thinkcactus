@@ -1,0 +1,88 @@
+/*
+Syntax error: Invalid CSS after "...---------------": expected selector or at-rule, was "/*-------------..."
+        on line 49 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss
+        from line 25 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/style.scss
+
+44: 
+45: //-----------------------------------
+46: // Add your own custom styles below
+47: //-----------------------------------
+48: 
+49: /*-------------------------
+50:  *  	[SITEWIDE] TYPOGRAPHY
+51:  *-------------------------
+52: @font-face
+53:   font-family: 'GentiumPlusRegular'
+54:   src: url('gentiumplus-r-webfont.eot')
+
+Backtrace:
+/Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss:49
+/Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/style.scss:25
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/scss/parser.rb:27:in `parse'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/engine.rb:213:in `_to_tree'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/engine.rb:179:in `block in to_tree'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/haml/util.rb:294:in `silence_haml_warnings'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/engine.rb:179:in `to_tree'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/files.rb:44:in `tree_for'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/import_node.rb:75:in `perform!'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/import_node.rb:64:in `_perform'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `block in perform_children'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/root_node.rb:59:in `perform!'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/tree/root_node.rb:29:in `render'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin.rb:223:in `update_stylesheet'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin.rb:88:in `block (2 levels) in update_stylesheets'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `each'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `block in update_stylesheets'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `each'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/Users/spyroslivathinos/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/spyroslivathinos/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/spyroslivathinos/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...---------------\": expected selector or at-rule, was \"/*-------------...\"\A         on line 49 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss\A         from line 25 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/style.scss\A \A 44: \A 45: //-----------------------------------\A 46: // Add your own custom styles below\A 47: //-----------------------------------\A 48: \A 49: /*-------------------------\A 50:  *  	[SITEWIDE] TYPOGRAPHY\A 51:  *-------------------------\A 52: @font-face\A 53:   font-family: 'GentiumPlusRegular'\A 54:   src: url('gentiumplus-r-webfont.eot')"; }

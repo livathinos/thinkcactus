@@ -1,0 +1,799 @@
+@import "compass/css3";
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+}
+
+//Headers (h1, h2, etc) have no default font-size or margin; define those yourself
+h1, h2, h3, h4, h5, h6 {
+  // Bold might not be the best choice if you are
+  // embedding a @font-face that's already bold
+  font-weight: bold;
+}
+
+a, a:active, a:visited { color: $link-color; }
+a:hover { color: $link-hover-color; }
+
+strong, th {
+  font-weight: bold;
+}
+
+small {
+  // Use font-size mixin to convert to percentage for YUI
+  // http://developer.yahoo.com/yui/3/cssfonts/#fontsize
+  @include font-size(11px);  // approx 85% when base-font-size eq 13px
+}
+
+// Add the 'required' attribute on your
+// inputs if you want to use these
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+  @include border-radius(1px);
+  @include box-shadow(red, 0, 0, 5px, 0);
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+/*-------------------------
+ *  	[SITEWIDE] TYPOGRAPHY
+ *-------------------------
+@font-face
+  font-family: 'GentiumPlusRegular'
+  src: url('gentiumplus-r-webfont.eot')
+  src: local("☺"), url('gentiumplus-r-webfont.woff') format("woff"), url('gentiumplus-r-webfont.ttf') format("truetype"), url('gentiumplus-r-webfont.svg#webfont1NvN7XYa') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: 'CalibriRegular'
+  src: url('calibri-webfont.eot')
+  src: local("☺"), url('calibri-webfont.woff') format("woff"), url('calibri-webfont.ttf') format("truetype"), url('calibri-webfont.svg#webfontUyJ9ZNxf') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+.rotate
+  -webkit-transform: rotate(-4deg)
+  -moz-transform: rotate(-5deg)
+  -ms-transform: rotate(-5deg)
+  -o-transform: rotate(-5deg)
+  transform: rotate(-10deg)
+
+.shadow
+  -moz-box-shadow: 2px 2px 5px #888
+  -webkit-box-shadow: 2px 2px 5px #888
+  box-shadow: 2px 2px 5px #888
+
+.normal-type, .normal-type-small
+  font-family: "Helvetica Neue", Helvetica, Tahoma
+  font-size: 13px
+  line-height: 21px
+  color: #444
+  margin: 10px 0 0 0
+
+.rounded-corners
+  -moz-border-radius: 5px
+  /* Firefox
+  -webkit-border-radius: 5px
+  /* Safari, Chrome
+  border-radius: 5px
+  /* CSS3
+
+.normal-type-small
+  font-size: 11px
+
+.code-type
+  font-family: "Monaco", Courier
+  background: #eee
+
+.korny-type
+  font-family: GentiumPlusRegular,Georgia
+  font-size: 30px
+  font-weight: normal
+  line-height: 24px
+  color: #262626
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.9)
+
+.korny-type-small
+  font-family: GentiumPlusRegular,Georgia
+  font-size: 30px
+  font-weight: normal
+  line-height: 24px
+  color: #262626
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.9)
+  font-size: 20px
+
+.korny-typeb
+  font-weight: bold
+
+.moremargin
+  margin-top: 40px
+
+.date-type
+  text-transform: uppercase
+  font-weight: normal
+  font-size: 10px
+  line-height: 10px
+  width: 20px
+  color: #999999
+  padding: 0
+  margin: 0
+
+a.simple
+  text-decoration: none
+  color: #262626
+
+.top-space
+  margin-top: 20px
+  display: block
+
+.bottom-space
+  margin-bottom: 10px
+  display: block
+
+/*-------------------------
+ *  	[SITEWIDE] GLOBAL RESET
+ *-------------------------
+
+html, body, div, span, applet, object, iframe, h1, h2, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+/* remember to define focus styles!
+
+\:focus
+  outline: 0
+
+/* remember to highlight inserts somehow!
+
+ins
+  text-decoration: none
+
+del
+  text-decoration: line-through
+
+/* tables still need 'cellspacing="0"' in the markup
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+a
+  color: #668800
+  &:hover
+    text-decoration: none
+
+.clear
+  clear: both
+
+/*-------------------------
+ *  	[SITEWIDE] BODY/HTML
+ *-------------------------
+
+body
+  font-size: 13px
+  font-family: "Helvetica Neue",Helvetica, Verdana
+  background-color: #ffffff
+  color: #444
+
+html
+  overflow: auto
+  -webkit-font-smoothing: antialiased
+
+h2
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  color: #333
+  font-size: 24px
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  line-height: 30px
+
+/*-------------------------
+ *  	[TOP] HEADER
+ *-------------------------
+
+#header
+  height: 106px
+  background: transparent url(../img/header_bg.png) repeat-x
+  position: relative
+  z-index: 3
+
+#header-inner
+  width: 960px
+  height: 106px
+  margin: 0 auto
+  padding: 0
+  position: relative
+  z-index: 4
+
+#logo
+  height: 109px
+  width: 353px
+  margin: 0
+  padding: 0
+  position: relative
+  z-index: 5
+
+/*-------------------------
+ *  	[TOP] NAVIGATION
+ *-------------------------
+
+.nav
+  float: right
+  font-size: 18px
+  margin: 45px 10px 0 0
+  font-weight: normal
+  li
+    display: inline
+    a
+      margin: 0 10px
+      text-decoration: none
+      color: #9d9b9b
+      padding: 3px 8px
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9)
+
+#home ul.nav li a.link-one:hover, #about ul.nav li a.link-two:hover, #contact ul.nav li a.link-three:hover, #blog ul.nav li a.link-four:hover, .nav li a:hover
+  background: transparent
+  -moz-border-radius: 0px
+  -webkit-border-radius: 0px
+  border-radius: 0px
+  color: #668800
+  text-shadow: 1px -1px 1px black
+
+#home .nav li a.link-one, #work .nav li a.link-two, #contact .nav li a.link-three, #blog .nav li a.link-four
+  color: #cfcfcf
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  border-radius: 5px
+  text-shadow: 1px -1px 1px black
+
+/*-----------------------------
+ *  	[CONTENT] INNER NAVIGATION
+ *-------------------------------
+
+.inner-nav
+  margin: 0 0 0 20px
+  font-family: Tahoma, Arial
+  ul
+    margin: 10px 0 10px 0
+    li
+      &:first-child
+        margin-left: 0
+      display: inline
+      padding: 2px 2px 5px 10px
+      background: url(../img/bullet_small.png) no-repeat center left
+      margin: 0 4px
+
+/*-------------------------
+ *  	[CONTENT] MAIN CONTENT
+ *-------------------------
+
+#wrapper
+  width: 960px
+  min-height: 750px
+  margin: 0 auto
+  padding: 0
+  z-index: 0
+  position: relative
+
+#content
+  padding: 35px 0 0 0
+  margin: 0
+  position: relative
+  z-index: 1
+  float: left
+
+/*-------------------------
+ *  	[CONTENT] POST
+ *-------------------------
+
+.post
+  position: relative
+  float: left
+  margin-bottom: 60px
+  line-height: 21px
+  font-weight: normal
+  color: #444
+  .wholelink
+    color: #ffffff
+    padding: 5px
+    background-color: #7ad865
+    border: 1px solid #71cd5c
+    text-shadow: 0px 1px 0px rgb(110, 201, 88, 0.9)
+    -moz-border-radius: 5px
+    -webkit-border-radius: 5px
+    border-radius: 5px
+    text-decoration: none
+    float: left
+    margin: 10px 0 10px 0
+  h2
+    padding-bottom: 5px
+
+ul.meta-tags
+  list-style-type: disc
+  margin-bottom: 20px
+  li
+    &:first-child
+      list-style-type: none
+    display: inline
+    padding-right: 5px
+    text-transform: uppercase
+    font-size: 10px
+
+.post
+  .wholelink:hover
+    -moz-box-shadow: 1px 1px 2px #CCCCCC
+  .sep
+    float: left
+    padding: 0 5px 0 0
+    margin-top: 7px
+    border-right: 1px solid #ccc
+    text-align: right
+    width: 75px
+
+.sep
+  .tweetlink, .date-type
+    float: left
+  .bubble
+    float: left
+    padding-right: 5px
+  .tweetlink
+    clear: left
+    padding: 5px 0 0 10px
+    font-size: 13px
+    line-height: 13px
+
+.post
+  .sep a
+  .nonsep
+    padding-left: 110px
+
+#upper-container
+  width: 680px
+  padding: 0 10px 20px 0
+  margin: 0 20px 20px 20px
+  position: relative
+  float: left
+
+#comments
+  float: left
+  width: 500px
+  padding-left: 110px
+  li
+    display: block
+
+#new_comment
+  float: left
+
+#comment_body
+  width: 400px
+  height: 150px
+
+#new_comment
+  .field
+    label
+      float: left
+      width: 110px
+      padding: 10px 10px 10px 0
+      clear: left
+    textarea
+      border: 1px solid #ccc
+      margin-top: 20px
+    input
+      float: left
+      margin: 10px
+      border: 1px solid #ccc
+      height: 20px
+      width: 270px
+  .actions input
+    float: left
+    margin: 10px 10px 10px 0
+    height: 20px
+    width: 200px
+
+#comment_author_name, #comment_author_url
+
+/*-------------------------
+ *  	[CONTENT] WORK
+ *-------------------------
+
+.seework
+  position: absolute
+  top: 110px
+  left: 438px
+  text-indent: -9999px
+  width: 115px
+  height: 69px
+  background: url(../img/upper_see_wor.png) no-repeat 0px 0px
+  &:hover
+    background-position: -118px 1px
+
+.teaser
+  width: 362px
+  height: 227px
+  position: absolute
+  top: 50px
+  right: 55px
+  z-index: 4
+
+.imac
+  position: absolute
+  height: 381px
+  width: 400px
+  top: 30px
+  right: 35px
+  z-index: 3
+
+/*-------------------------
+ *  	[CONTENT] SLIDER
+ *-------------------------
+
+.previous, .next
+  color: #ffffff
+  padding: 5px
+  background-color: #7ad865
+  border: 1px solid #71cd5c
+  text-shadow: 0px 1px 0px rgb(110, 201, 88, 0.9)
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  border-radius: 5px
+  text-decoration: none
+  float: right
+  margin: 0 0 0 4px
+
+.previous:hover, .next:hover
+  -moz-box-shadow: 1px 1px 2px #CCCCCC
+
+.previous
+  opacity: 0.5
+  cursor: default
+
+.next
+
+.ditysItem, .tsItem, .khomeItem, .shopItem, .carnivalItem, .pavItem, .financoidItem
+  display: none
+
+/*-------------------------
+ *  	[CONTENT] SIDEBAR
+ *-------------------------
+
+#sidebar
+  float: left
+  width: 215px
+  padding: 0 5px 5px 5px
+  margin: 0
+  color: #666666
+  position: relative
+
+ul
+  &.side-projects li
+    padding-left: 20px
+    background: url(../img/footer_bullet.png) center left no-repeat
+  &.social-code li
+    padding: 5px 0 10px 30px
+    &.bitbucket
+      background: url(../img/bitbucket_icon.png) center left no-repeat
+    &.github
+      background: url(../img/github_icon.png) center left no-repeat
+  &.social li
+    display: inline
+    padding: 2px
+
+/*-------------------------
+ *	CENTER SECTION STYLE
+ *-------------------------
+
+#left-floater
+  width: 680px
+  padding: 0 10px 20px 0
+  margin: 0 20px 20px 20px
+  position: relative
+  float: left
+
+#center-container
+  z-index: 10
+  width: 680px
+  padding: 0
+  margin: 0 20px 20px 0
+  position: relative
+  float: left
+  h2
+    margin-left: 20px
+
+.snapshot-wrapper
+  position: absolute
+  left: 17px
+  width: 275px
+  height: 219px
+  padding: 25px 0 0 15px
+  background: url(../img/snap_bg.png) top left no-repeat
+
+.center-nav
+  position: relative
+  top: -25px
+  left: 270px
+  z-index: 100
+  width: 400px
+  li
+    display: inline
+    margin: 0 10px
+    font-size: 16px
+    span
+      text-decoration: none
+      color: #2e3235
+      padding: 1px 8px
+      &.cpatra
+        color: #262525
+        background-color: #99bfd9
+        -moz-border-radius: 5px
+
+/*-------------------------
+ *	CENTER SECTION TYPOGRAPHY
+ *-------------------------
+
+.container-header-brief, .container-header-tech, .container-header-inv
+  position: relative
+  padding: 0
+  margin: 0
+  font-family: CalibriRegular,Helvetica
+  font-style: italic
+  font-weight: normal
+  font-size: 18px
+  color: #609367
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7)
+  width: 200px
+
+.container-header-brief
+  top: -2px
+  left: 308px
+
+.container-header-tech
+  top: 0px
+  left: 308px
+
+.container-header-inv
+  top: -179px
+  left: 672px
+
+#center-container
+  p.description
+    padding: 5px 10px 10px 10px
+    position: relative
+    top: 0px
+    left: 300px
+    width: 375px
+    height: 125px
+    line-height: 18px
+  .technos
+    float: left
+    margin: 10px 0 0 307px
+    line-height: 18px
+    li
+      padding: 0 0 0 25px
+      background: url('../img/center_accept.png') no-repeat center left
+  .technos-ext
+    float: left
+    margin: 10px 0 0 10px
+    line-height: 18px
+    width: 195px
+    li
+      padding: 0 0 0 25px
+      background: url('../img/center_accept.png') no-repeat center left
+  p.involvement
+    padding: 0
+    margin: 0
+    position: relative
+    top: -165px
+    left: 672px
+    width: 270px
+    height: 60px
+    line-height: 18px
+  a.visit-link
+    position: absolute
+    bottom: 65px
+    left: 20px
+
+.navwhere
+  position: absolute
+  width: 200px
+  height: 27px
+  bottom: 70px
+  left: 215px
+
+#watercolors
+  width: 884px
+  height: 473px
+  z-index: -1
+  position: absolute
+  top: 100px
+
+span
+  &.noBtn, &.firstBtn, &.secondBtn, &.thirdBtn
+    padding: 0
+    margin: 0
+    width: 23px
+    position: absolute
+    bottom: 60px
+    left: 20px
+  &.firstBtn
+    left: 20px
+  &.secondBtn
+    left: 45px
+  &.thirdBtn
+    left: 70px
+  &.firstBtn a, &.secondBtn a, &.thirdBtn a
+    display: block
+    height: 30px
+    text-indent: -9999px
+    background: url(../img/main_snap_buttons.png) no-repeat center left
+  &.firstBtn a
+    background-position: -25px 4px
+
+#pattern
+  position: absolute
+  bottom: -50px
+  left: -1px
+
+/*-------------------------
+ *	SLIDER STYLE
+ *-------------------------
+
+#recone, #rectwo
+  position: relative
+  display: block
+  height: 350px
+
+#recthree
+  position: relative
+  display: none
+
+/*-------------------------
+ *	FOOTER STYLE
+ *-------------------------
+
+#footer
+  height: 66px
+  /*background: url(../img/footer_bg.png) repeat-x;
+  position: relative
+  z-index: 3
+  margin: 0
+  clear: both
+  padding: 0
+
+#footer-inner
+  margin: 0 auto
+  padding: 0
+  padding-top: 40px
+  z-index: 4
+
+#blog-container, #twitter-container, #info-container
+  width: 325px
+  margin: 40px 15px 10px 0
+  padding: 0
+  float: left
+  color: #447172
+  z-index: 5
+  line-height: 18px
+
+#blog-container
+  background: url(../img/footer_speech_bubble.png) no-repeat 0px 10px
+
+#twitter-container
+  background: url(../img/footer_twitter_icon.png) no-repeat top left
+
+#info-container
+  background: url(../img/footer_bulb_icon.png) no-repeat top left
+
+#blog-container h3
+  font-size: 18px
+  padding: 3px 0 0 55px
+  background: url(../img/footer_line.png) no-repeat 52px 19px
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6)
+
+#twitter-container h3
+  font-size: 18px
+  padding: 3px 0 0 60px
+  background: url(../img/footer_line.png) no-repeat 58px 19px
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6)
+
+#info-container
+  h3
+    font-size: 18px
+    padding: 3px 0 0 35px
+    background: url(../img/footer_line.png) no-repeat 33px 19px
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6)
+  margin: 40px 0 10px 0
+
+#blog-container ul, #twitter-container ul
+  margin: 0 0 40px 0
+
+#info-container p
+  margin: 0 0 40px 0
+  padding: 0 0 0 35px
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7)
+
+#blog-container ul li, #twitter-container ul li
+  padding: 0
+  margin: 10px 0
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7)
+
+#blog-container ul li
+  padding: 0 0 0 55px
+  background: url(../img/footer_bullet.png) no-repeat 25px 5px
+
+#twitter-container ul li
+  padding: 0 0 0 60px
+  background: url(../img/footer_bullet.png) no-repeat 30px 5px
+
+#blog-container ul li a, #twitter-container ul li a, #info-container a
+  color: #c43c3a
+  text-decoration: none
+
+#blog-container ul li a:hover, #twitter-container ul li a:hover, #info-container a:hover
+  text-decoration: underline
+
+.copyright
+  clear: both
+  font-family: Tahoma
+  text-align: center
+  font-size: 10px
+  color: #999999
+
+.blue-tag, .green-tag
+  padding: 5px 5px 5px 40px
+  color: #fff
+  font-size: 30px
+  font-weight: bold
+  width: 100px
+  position: relative
+  left: -30px
+  margin-bottom: 5px
+
+.blue-tag
+  background: #5095F4
+  border: 1px solid #4188EA
+  text-shadow: 0px -1px 0px #3238e5
+
+.green-tag
+  background: #6BE031
+  border: 1px solid #5BD31F
+  text-shadow: 0px -1px 0px #369108
+  width: 200px

@@ -1,4 +1,6 @@
 Thinkcactus::Application.routes.draw do
+  get "about/index"
+
   get "comments/index"
 
   get "work/index"

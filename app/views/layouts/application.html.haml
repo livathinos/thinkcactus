@@ -1,0 +1,66 @@
+!!! 5
+-# http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither
+-ie_html :class => 'no-js' do
+  = render :partial => 'layouts/head'
+  %body#home{ :lang => 'en', :class => "#{controller.controller_name}" }
+    #header
+      #header-inner
+        %a{:href => "/"}
+          %img#logo{:alt => "ThinkCactus - Spyros' Blog &amp; Portfolio", :src => "/img/thinkc_logo.png"}/
+        %ul.nav
+          %li
+            %a.link-one{:href => "/"} home
+          %li
+            %a.link-two{:href => "/about"} about
+          %li
+            %a.link-two{:href => "/work"} work
+      / end of #header-inner
+    / end of #header
+    #wrapper
+      #content
+        = yield
+        #sidebar
+          %h2.korny-type-small In a few words
+          %p.normal-type
+            My name is Spyros and I generally like to keep myself busy at most times with anything that has to do with code and music. I am currently studying at the
+            %a{:href => "http://www.ceid.upatras.gr/"} Computer Engineering & Informatics Department
+            of the University of Patras and working at the
+            = succeed "." do
+              %a{:href => "http://www.cti.gr/index.php?lang=en"} Research Academic Computer Technology Institute
+          %h2.korny-type-small.moremargin.bottom-space
+            %a.simple{:href => "http://twitter.com/spyrosl"} Tweets
+          %span#my_twitter_status
+          %br
+            %b
+              %span#my_twitter_status_time/
+            %h2.korny-type-small.moremargin Side projects
+            %p.normal-type Check out any projects I am or was working on
+            %ul.social-code
+              %li.bitbucket
+                %a{:href => "http://bitbucket.org/spyros_l"} bitbucket
+              %li.github
+                %a{:href => "http://github.com/spyrosl"} github
+            %h2.korny-type-small.moremargin Find me elsewhere
+            %p.normal-type Other places I frequent at
+            %ul.social
+              %li
+                %a{:href => "http://twitter.com/spyrosl"}
+                  %img{:alt => "Find me on Twitter", :src => "/img/twitter.png"}/
+              %li
+                %a{:href => "http://gr.linkedin.com/pub/spyros-livathinos/10/63a/6b2"}
+                  %img{:alt => "Find me on LinkedIn", :src => "/img/linkedin.png"}/
+              %li
+                %a{:href => "http://delicious.com/spyrosl"}
+                  %img{:alt => "Find me on Delicious", :src => "/img/delicious.png"}/
+              %li
+                %a{:href => "mailto:livathinos.spyros@gmail.com"}
+                  %img{:alt => "Contact me via gMail", :src => "/img/google.png"}/
+      / end of #content
+      .clear
+    / end of #wrapper
+    #footer
+      #footer-inner
+        %p.copyright © 2010 Spyros Livathinos
+      / end of #footer-inner
+    / end of #footer
+    = render :partial => 'layouts/javascripts'
