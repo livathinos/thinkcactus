@@ -2,16 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'mysql'
-
-# Cucumber + Rspec
-#gem 'capybara'
-#gem 'database_cleaner'
-#gem 'cucumber-rails'
-#gem 'cucumber'
 gem 'rspec'
 gem 'rspec-rails'
 gem 'spork'

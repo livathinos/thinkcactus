@@ -12,6 +12,10 @@
       <li>Category: <%= post.category %> <span>‹</span></li>
       <li><%= link_to "Full post & comments", post %> <span>‹</span></li>
     </ul>
-	  <%= simple_format(post.body) %>
+    <% if post_counter==0 %>
+	    <%= simple_format(post.body) %>
+	  <% else %>
+	    <%= simple_format(truncate(post.body, :length => 700, :separator => "...")) %>
+	  <% end %>
 	</div>
 </div>

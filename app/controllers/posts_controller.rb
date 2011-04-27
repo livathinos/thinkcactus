@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   
-  #make sure only the admin has writing and editing privileges
+  # make sure only the admin has writing and editing privileges
   before_filter :authenticate, :except => [:index, :show]
   
   # GET /posts
