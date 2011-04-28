@@ -249,7 +249,7 @@ h2 {
 .inner-nav ul li {
 	display: inline;
 	padding: 2px 2px 5px 10px;
-	background: url(../img/bullet_small.png) no-repeat center left;
+	background: url(/img/bullet_small.png) no-repeat center left;
 	margin: 0 4px;
 }
 
@@ -362,7 +362,7 @@ ul.meta-tags li {
 	text-indent: -9999px;
 	width: 115px;
 	height: 69px;
-	background: url(../img/upper_see_wor.png) no-repeat 0px 0px;
+	background: url(/img/upper_see_wor.png) no-repeat 0px 0px;
 }
 .seework:hover {
 	background-position: -118px 1px;
@@ -436,15 +436,15 @@ ul.meta-tags li {
 
 ul.side-projects {}
 
-ul.side-projects li { padding-left: 20px; background: url(../img/footer_bullet.png) center left no-repeat; }
+ul.side-projects li { padding-left: 20px; background: url(/img/footer_bullet.png) center left no-repeat; }
 
 ul.social-code {}
 
 ul.social-code li { padding: 5px 0 10px 30px; }
 
-ul.social-code li.bitbucket { background: url(../img/bitbucket_icon.png) center left no-repeat; }
+ul.social-code li.bitbucket { background: url(/img/bitbucket_icon.png) center left no-repeat; }
 
-ul.social-code li.github { background: url(../img/github_icon.png) center left no-repeat; }
+ul.social-code li.github { background: url(/img/github_icon.png) center left no-repeat; }
 
 ul.social {}
 
@@ -485,7 +485,7 @@ ul.social li a { text-decoration: none; }
 	width:  275px;
 	height: 219px;
 	padding: 25px 0 0 15px;
-	background: url(../img/snap_bg.png) top left no-repeat;
+	background: url(/img/snap_bg.png) top left no-repeat;
 }
 .center-nav {
 	position: relative;
@@ -554,7 +554,7 @@ ul.social li a { text-decoration: none; }
 }
 #center-container .technos li {
 	padding: 0 0 0 25px;
-	background: url('../img/center_accept.png') no-repeat center left;
+	background: url('/img/center_accept.png') no-repeat center left;
 }
 #center-container .technos-ext {
 	float: left;
@@ -564,7 +564,7 @@ ul.social li a { text-decoration: none; }
 }
 #center-container .technos-ext li {
 	padding: 0 0 0 25px;
-	background: url('../img/center_accept.png') no-repeat center left;
+	background: url('/img/center_accept.png') no-repeat center left;
 }
 #center-container p.involvement {
 	padding: 0;
@@ -618,7 +618,7 @@ span.thirdBtn a {
 	display: block;
 	height: 30px;
 	text-indent: -9999px;
-	background: url(../img/main_snap_buttons.png) no-repeat center left;
+	background: url(/img/main_snap_buttons.png) no-repeat center left;
 }
 span.firstBtn a { background-position: -25px 4px;}
 #pattern {
@@ -648,7 +648,7 @@ span.firstBtn a { background-position: -25px 4px;}
 -------------------------*/
 #footer {
 	height: 66px;
-	/*background: url(../img/footer_bg.png) repeat-x;*/
+	/*background: url(/img/footer_bg.png) repeat-x;*/
 	position: relative;
 	z-index: 3;
 	margin: 0;
@@ -672,25 +672,25 @@ span.firstBtn a { background-position: -25px 4px;}
 	z-index: 5;
 	line-height: 18px;
 }
-#blog-container { background: url(../img/footer_speech_bubble.png) no-repeat 0px 10px; }
-#twitter-container { background: url(../img/footer_twitter_icon.png) no-repeat top left; }
-#info-container { background: url(../img/footer_bulb_icon.png) no-repeat top left; }
+#blog-container { background: url(/img/footer_speech_bubble.png) no-repeat 0px 10px; }
+#twitter-container { background: url(/img/footer_twitter_icon.png) no-repeat top left; }
+#info-container { background: url(/img/footer_bulb_icon.png) no-repeat top left; }
 #blog-container h3 { 
 	font-size: 18px; 
 	padding: 3px 0 0 55px; 
-	background: url(../img/footer_line.png) no-repeat 52px 19px; 
+	background: url(/img/footer_line.png) no-repeat 52px 19px; 
 	text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
 }
 #twitter-container h3 { 
 	font-size: 18px; 
 	padding: 3px 0 0 60px; 
-	background: url(../img/footer_line.png) no-repeat 58px 19px; 
+	background: url(/img/footer_line.png) no-repeat 58px 19px; 
 	text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
 }
 #info-container h3 { 
 	font-size: 18px; 
 	padding: 3px 0 0 35px; 
-	background: url(../img/footer_line.png) no-repeat 33px 19px; 
+	background: url(/img/footer_line.png) no-repeat 33px 19px; 
 	text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
 }
 #info-container {
@@ -710,11 +710,11 @@ span.firstBtn a { background-position: -25px 4px;}
 }
 #blog-container ul li {
 	padding: 0 0 0 55px;
-	background: url(../img/footer_bullet.png) no-repeat 25px 5px;
+	background: url(/img/footer_bullet.png) no-repeat 25px 5px;
 }
 #twitter-container ul li {
 	padding: 0 0 0 60px;
-	background: url(../img/footer_bullet.png) no-repeat 30px 5px;
+	background: url(/img/footer_bullet.png) no-repeat 30px 5px;
 }
 #blog-container ul li a,
 #twitter-container ul li a,
