@@ -450,6 +450,10 @@ ul.social {}
 
 ul.social li { display: inline; padding: 2px; }
 
+ul.social li img { border: none; }
+
+#twitter_update_list li span a { text-decoration: none; color: #999;}
+
 /*-------------------------
 	CENTER SECTION STYLE
 -------------------------*/

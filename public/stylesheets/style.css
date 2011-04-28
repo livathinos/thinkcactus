@@ -450,6 +450,14 @@ ul.social {}
 
 ul.social li { display: inline; padding: 2px; }
 
+ul.social li a { text-decoration: none; }
+
+#twitter_update_list { line-height: 16px;}
+#twitter_update_list li { margin: 8px 0;}
+#twitter_update_list li:first-child { margin-top: 0; }
+#twitter_update_list li span a { text-decoration: none; color: #999; font-weight: normal; display: inline;}
+#twitter_update_list li a { text-decoration: none; color: #565555; font-weight: bold; display: block;}
+
 /*-------------------------
 	CENTER SECTION STYLE
 -------------------------*/
