@@ -3,7 +3,7 @@ Thinkcactus::Application.routes.draw do
 
   get "comments/index"
 
-  get "work/index"
+  get "work" => "work#index"
 
   get "posts/index"
   
