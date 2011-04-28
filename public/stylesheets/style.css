@@ -170,7 +170,7 @@ h2 {
 -------------------------*/
 #header {
 	height: 106px;
-	background: transparent url(../img/header_bg.png) repeat-x;
+	background: transparent url(/img/header_bg.png) repeat-x;
 	position: relative;
 	z-index: 3;
 }
