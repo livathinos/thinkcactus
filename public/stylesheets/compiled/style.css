@@ -1,22 +1,22 @@
 /*
-Syntax error: Invalid CSS after "...---------------": expected selector or at-rule, was "/*-------------..."
-        on line 49 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss
+Syntax error: Invalid CSS after ".normal-type, .n": expected selector or at-rule, was ".normal-type-small"
+        on line 71 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss
         from line 25 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/style.scss
 
-44: 
-45: //-----------------------------------
-46: // Add your own custom styles below
-47: //-----------------------------------
-48: 
-49: /*-------------------------
-50:  *  	[SITEWIDE] TYPOGRAPHY
-51:  *-------------------------
-52: @font-face
-53:   font-family: 'GentiumPlusRegular'
-54:   src: url('gentiumplus-r-webfont.eot')
+66: .shadow
+67:   -moz-box-shadow: 2px 2px 5px #888
+68:   -webkit-box-shadow: 2px 2px 5px #888
+69:   box-shadow: 2px 2px 5px #888
+70: 
+71: .normal-type, .normal-type-small
+72:   font-family: "Helvetica Neue", Helvetica, Tahoma
+73:   font-size: 13px
+74:   line-height: 21px
+75:   color: #444
+76:   margin: 10px 0 0 0
 
 Backtrace:
-/Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss:49
+/Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss:71
 /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/style.scss:25
 /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
 /Users/spyroslivathinos/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
@@ -85,4 +85,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...---------------\": expected selector or at-rule, was \"/*-------------...\"\A         on line 49 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss\A         from line 25 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/style.scss\A \A 44: \A 45: //-----------------------------------\A 46: // Add your own custom styles below\A 47: //-----------------------------------\A 48: \A 49: /*-------------------------\A 50:  *  	[SITEWIDE] TYPOGRAPHY\A 51:  *-------------------------\A 52: @font-face\A 53:   font-family: 'GentiumPlusRegular'\A 54:   src: url('gentiumplus-r-webfont.eot')"; }
+  content: "Syntax error: Invalid CSS after \".normal-type, .n\": expected selector or at-rule, was \".normal-type-small\"\A         on line 71 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/partials/_page.scss\A         from line 25 of /Users/spyroslivathinos/web_dev/thinkcactus/app/stylesheets/style.scss\A \A 66: .shadow\A 67:   -moz-box-shadow: 2px 2px 5px #888\A 68:   -webkit-box-shadow: 2px 2px 5px #888\A 69:   box-shadow: 2px 2px 5px #888\A 70: \A 71: .normal-type, .normal-type-small\A 72:   font-family: \"Helvetica Neue\", Helvetica, Tahoma\A 73:   font-size: 13px\A 74:   line-height: 21px\A 75:   color: #444\A 76:   margin: 10px 0 0 0"; }
