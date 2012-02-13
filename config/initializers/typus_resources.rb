@@ -9,20 +9,14 @@ Typus::Resources.setup do |config|
   # Defines form_rows.
   # config.form_rows = 15
 
-  # Defines action_after_save.
-  # config.action_after_save = "edit"
-
   # Defines minute_step.
   # config.minute_step = 5
-
-  # Defines nil.
-  # config.human_nil = "nil"
 
   # Defines only_user_items.
   # config.only_user_items = false
 
   # Defines per_page.
-  # config.per_page = 15
+  # config.per_page = 25
 
   # Defines start_year.
   # config.start_year = nil

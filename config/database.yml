@@ -8,7 +8,6 @@ development:
   <<: *defaults
   database: blog_dev
   encoding: utf8
-  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -17,7 +16,6 @@ test: &test
   <<: *defaults
   database: blog_test
   encoding: utf8
-  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 production:
   <<: *defaults

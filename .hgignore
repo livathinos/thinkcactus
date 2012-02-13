@@ -6,6 +6,7 @@ log/*.pid
 log/call_*
 db/schema.rb
 db/*.bkp
+vendor/cache/*
 .DS_Store
 *.swp
 *~

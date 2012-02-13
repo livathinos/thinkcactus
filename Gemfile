@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.5'
+gem 'rails', '3.2'
 
 gem 'mysql'
 gem 'rspec'
@@ -9,7 +9,7 @@ gem 'spork'
 gem 'launchy'
 
 # Typus
-gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
+gem 'typus'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -19,9 +19,6 @@ gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
-
-# Include compass
-gem "compass", ">= 0.10.6"
 
 # Haml for our templates
 gem 'haml'
