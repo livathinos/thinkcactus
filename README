@@ -1,5 +1,5 @@
-=== Blog Engine written in Rails 3.0.5
+=== Blog Engine written in Rails 3.2
 
-A content publishing platform built with Rails 3.0.5, that allows for
+A content publishing platform built with Rails 3.2, that allows for
 content management, user administration, and content publishing intended
 to be used on my own blog.
