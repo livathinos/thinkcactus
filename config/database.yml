@@ -1,13 +1,17 @@
 defaults: &defaults
-  adapter: mysql
+  adapter: mysql2
   username: root
   password:
   host: localhost
 
 development:
-  <<: *defaults
+  adapter: mysql2
+  username: root
+  password:
+  host: localhost
   database: blog_dev
   encoding: utf8
+  #socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

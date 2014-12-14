@@ -1,27 +1,31 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2'
+gem 'rails', '4.1.7'
 
-gem 'mysql'
+gem 'mysql2'
 gem 'rspec'
 gem 'rspec-rails'
 gem 'spork'
 gem 'launchy'
 
-# Typus
-gem 'typus'
+gem "friendly_id", "~> 4.0.1"
+
+# Active Admin
+gem 'activeadmin', github: 'activeadmin'
+gem 'ransack'
+gem 'inherited_resources', github: 'josevalim/inherited_resources'
+gem 'formtastic',          github: 'justinfrench/formtastic'
+gem 'sass-rails'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
+gem 'devise'
 
 # To use debugger
 # gem 'ruby-debug'
 
 # Haml for our templates
 gem 'haml'
-
-# Use paul's HTML5boilerplate
-gem 'html5-boilerplate'

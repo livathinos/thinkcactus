@@ -1,22 +1,28 @@
-<% title "Spyros' Blog & Portfolio" %>
-<div class="post">
+<article class="post">
   <div class="sep">
-    <img class="bubble" src="img/thought_bubble.png" alt="" />
+    <img class="bubble" src="images/thought_bubble.png" alt="" />
     <p class="date-type"><%= post.created_at.strftime(" %b %d %Y") %></p>
-    <a class="tweetlink" href='http://twitter.com/?status="<%= post.title %>" by @spyrosl: <%= link_to "", post %>'>Retweet</a>
+    <a class="tweetlink" href='http://twitter.com/?status="<%= post.title %>" by @spyrosl: <%= "http://#{request.host+ url_for(post)}" %>'>Tweet this</a>
   </div>
   <div class="nonsep">
-	  <h2><%= post.title %></h2>
+	  <h2><%= link_to post.title, post %></h2>
     <ul class="meta-tags">
       <li>#<%= post.tag_one %>,</li>
       <li>#<%= post.tag_two %> <span>‹</span></li>
       <li>Category: <%= post.category %> <span>‹</span></li>
-      <li><%= link_to "Full post & comments", post %> <span>‹</span></li>
+      <li><%= link_to "Permalink", post %> <span> →</span></li>
     </ul>
     <% if post_counter==0 %>
-	    <%= simple_format(post.body) %>
+	    <%= post.body.html_safe %>
 	  <% else %>
-	    <%= simple_format(truncate(post.body, :length => 500, :separator => "...")) %>
+	    <%= truncate(post.body, :length => 500, :separator => "...").html_safe %>
 	  <% end %>
 	</div>
-</div>
+	
+	<div class="bottom-sep">
+	  <p class="date-type"><%= post.created_at.strftime(" %b %d %Y") %></p>
+	  <%= link_to "Permalink", post %> <span> →</span>
+	</div>
+</article>
+
+<hr>

@@ -1,12 +1,10 @@
 class PostsController < ApplicationController
-  
+
   # make sure only the admin has writing and editing privileges
-  before_filter :authenticate, :except => [:index, :show]
-  
-  # GET /posts
-  # GET /posts.xml
+  before_filter :authenticate, :except => [:index, :show, :feed]
+
   def index
-    @posts = Post.all :order => "created_at DESC"
+    @posts = Post.all.order("created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,8 +12,6 @@ class PostsController < ApplicationController
     end
   end
 
-  # GET /posts/1
-  # GET /posts/1.xml
   def show
     @post = Post.find(params[:id])
 
@@ -25,8 +21,6 @@ class PostsController < ApplicationController
     end
   end
 
-  # GET /posts/new
-  # GET /posts/new.xml
   def new
     @post = Post.new
 
@@ -36,13 +30,10 @@ class PostsController < ApplicationController
     end
   end
 
-  # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
   end
 
-  # POST /posts
-  # POST /posts.xml
   def create
     @post = Post.new(params[:post])
 
@@ -82,6 +73,27 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(posts_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  # RSS feed
+  def feed
+    # this will be the name of the feed displayed on the feed reader
+    @title = "Thinkcactus | Code & Randomness"
+
+    # retrieve the posts
+    @posts = Post.order("updated_at desc")
+
+    # feed's update timestamp
+    @updated = @posts.first.updated_at unless @posts.empty?
+
+    @description = "A blog about coding, design, music and other random thoughts. Curated by Spyros Livathinos."
+
+    respond_to do |format|
+      format.atom { render :layout => false }
+
+      # we want the RSS feed to redirect permanently to the ATOM feed
+      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
     end
   end
 end
