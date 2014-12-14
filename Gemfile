@@ -8,7 +8,7 @@ gem 'rspec-rails'
 gem 'spork'
 gem 'launchy'
 
-gem "friendly_id", "~> 4.0.1"
+gem 'friendly_id'
 
 # Active Admin
 gem 'activeadmin', github: 'activeadmin'
